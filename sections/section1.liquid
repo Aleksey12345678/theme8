@@ -1,6 +1,110 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{{ 'section1Css.css' | asset_url | stylesheet_tag }}
+{{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
+<div class="section">
+  <div class="section__container firstSection__container">
+    <div class="section__inner firstSection__inner">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'heading' %}
+            <div class="firstSection__titleDiv">
+              {% if block.settings.heading.size == 0 %}
+                <h1 class="firstSection__title H1Font">Marvel Power Group</h1>
+              {% else %}
+                <h1 class="firstSection__title H1Font">{{ block.settings.heading }}</h1>
+              {% endif %}
+            </div>
+          {% when 'text' %}
+            {% if block.settings.text.size == 0 %}
+              <p class="firstSection__text body1Font">
+                Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer
+                services to clients in power, gas, water, industrial and transportation sectors.
+              </p>
+            {% else %}
+              <p class="firstSection__text body1Font">{{ block.settings.text }}</p>
+            {% endif %}
+          {% when 'button' %}
+            <div class="firstSection__btn">
+              {% render 'contactButton' %}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .firstSection__container{
+    {% if section.settings.image == blank %}
+       background-image: url("{{ 'robert-bye-R-WtV-QyVnY-unsplash.png' | asset_url }}");
+    {% else %}
+      background-image: url('{{ section.settings.image| img_url: "master"  }}');
+    {% endif %}
   }
+</style>
+
+{% schema %}
+{
+  "name": "Section- 1",
+  "settings": [
+     {
+      "type":"image_picker",
+      "id":"image",
+      "label":"image"
+
+    }
+  ],
+  "blocks":[
+   { "type":"heading",
+    "name":"Title-section1",
+    "limit":3,
+    "settings":[
+      {
+       "type":"inline_richtext",
+        "id":"heading",
+        "default":"Marvel Power Group",
+        "label":"Background image"
+      }
+    ]
+   },
+    {
+      "type":"text",
+      "name":"Text-section1",
+      "limit":3,
+      "settings":[
+        {
+          "type":"inline_richtext",
+          "id":"text",
+          "default":" Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer services to clients in power, gas, water, industrial and transportation sectors.",
+
+          "label":"Support text"
+        }
+      ]
+
+    },
+    {
+      "type":"button",
+      "name":"Button-section1",
+      "limit":3,
+      "settings":[
+
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"section1",
+        "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
