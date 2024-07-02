@@ -27,6 +27,7 @@
         "button_EGfHcr": {
           "type": "button",
           "settings": {
+            "buttonText": "send upgh"
           }
         }
       },
