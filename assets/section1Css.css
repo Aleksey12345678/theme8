@@ -9,14 +9,10 @@
 }
           
 
-.firstSection__container{            
-
-       
+.firstSection__container{ 
   background-size: cover;
   background-repeat: no-repeat;           
-  background-position:30% 100%;
- 
-  
+  background-position:30% 100%;  
    }
 
 .firstSection__container::before {
