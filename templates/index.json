@@ -9,39 +9,38 @@
 */
 {
   "sections": {
-    "section1_r6UkfP": {
+    "section1_zFAyCJ": {
       "type": "section1",
       "blocks": {
-        "heading_UcWzPT": {
+        "heading_nthQwi": {
           "type": "heading",
           "settings": {
             "heading": "Marvel Power Group"
           }
         },
-        "text_WDrmTW": {
+        "text_cw6LL6": {
           "type": "text",
           "settings": {
             "text": "Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer services to clients in power, gas, water, industrial and transportation sectors."
           }
         },
-        "button_EGfHcr": {
+        "button_bdRwik": {
           "type": "button",
           "settings": {
-            "buttonText": ""
+            "buttonText": "CONTACT US"
           }
         }
       },
       "block_order": [
-        "heading_UcWzPT",
-        "text_WDrmTW",
-        "button_EGfHcr"
+        "heading_nthQwi",
+        "text_cw6LL6",
+        "button_bdRwik"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/robert-bye-R-WtV-QyVnY-unsplash.png"
       }
     }
   },
   "order": [
-    "section1_r6UkfP"
+    "section1_zFAyCJ"
   ]
 }
