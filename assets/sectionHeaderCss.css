@@ -5,7 +5,8 @@
   right: 0;
   display: flex;
   justify-content: center;
-  height:95px;             
+  height:95px;    
+      z-index: 1;
   }
 
  .sectionHeader__container{
