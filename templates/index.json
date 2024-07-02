@@ -9,14 +9,6 @@
 */
 {
   "sections": {
-    "section_header_mwn364": {
-      "type": "sectionHeader",
-      "settings": {
-        "padding": 24,
-        "logo_width": 100,
-        "navigation": "main-menu"
-      }
-    },
     "section1_zFAyCJ": {
       "type": "section1",
       "blocks": {
@@ -49,7 +41,6 @@
     }
   },
   "order": [
-    "section_header_mwn364",
     "section1_zFAyCJ"
   ]
 }
