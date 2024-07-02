@@ -90,7 +90,7 @@
             {% render 'headerUl' %}
           </div>
           <div class="sectionHeader__mobileNav_contactButton">
-            {% assign buttonText = block.settings.buttonText %}
+            {% assign buttonText = settings.buttonText %}
             {% render 'contactButton', buttonText: buttonText %}
           </div>
         </div>
@@ -157,29 +157,22 @@
       "id": "navigation",
       "label": "Navigation menu",
       "default":"main-menu"
-    }
-  ],
-   "blocks":[
- {
-      "type":"button",
-      "name":"Button-section1",
-      "limit":3,
-      "settings":[
-        {
+    },
+      {
           "type":"inline_richtext",
           "id":"buttonText",
           "default":" CONTACT US",
 
           "label":"Button text"
       }
-   ]}],
+  ],
+   "blocks":[
+ ],
     "presets":[
   {
     "name":"sectionHeader",
     "blocks": [
- {
-          "type": "button"
-        }
+
       ]
   }
 ]
