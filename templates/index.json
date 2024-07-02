@@ -1,0 +1,45 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "section1": {
+      "type": "section1",
+      "blocks": {
+        "heading_yibAnh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Marvel Power Group"
+          }
+        },
+        "text_TJE9Qe": {
+          "type": "text",
+          "settings": {
+            "text": "Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer services to clients in power, gas, water, industrial and transportation sectors."
+          }
+        },
+        "button_jQGtrY": {
+          "type": "button",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_yibAnh",
+        "text_TJE9Qe",
+        "button_jQGtrY"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "section1"
+  ]
+}
