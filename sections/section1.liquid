@@ -28,10 +28,10 @@
               <button class="contactButton" type="submit">
                 <div class="contactButtonInner buttonFont">
                   <div class="buttonText">
-                    {% if settings.buttonText.size == 0 %}
+                    {% if block.settings.buttonText.size == 0 %}
                       <span>CONTACT US</span>
                     {% else %}
-                      <span>{{ settings.buttonText }}</span>
+                      <span>{{ block.settings.buttonText }}</span>
                     {% endif %}
                   </div>
                   <div>
