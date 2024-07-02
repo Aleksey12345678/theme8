@@ -38,9 +38,18 @@
       ],
       "settings": {
       }
+    },
+    "section_header_mwn364": {
+      "type": "sectionHeader",
+      "settings": {
+        "padding": 24,
+        "logo_width": 100,
+        "navigation": "main-menu"
+      }
     }
   },
   "order": [
-    "section1_zFAyCJ"
+    "section1_zFAyCJ",
+    "section_header_mwn364"
   ]
 }
