@@ -1,0 +1,344 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+
+  font-size:100%;
+}
+
+img, svg{
+  display:block;
+ 
+}
+
+div{
+ word-wrap: break-word;
+ 
+ 
+
+}
+
+button,
+input,
+select,
+textarea{
+  outline: none;
+  border:none;
+  background:transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+    
+}
+
+a{
+  text-decoration:none;
+  color:rgb(11, 13, 33);
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width:100%;            
+}
+
+ .section__container{
+  display: flex;
+  justify-content: center;
+  max-width:1640px;
+  width:100%; 
+ }
+
+.section__inner{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1174px; 
+  padding: 0 15px;
+margin-bottom:56px;
+   @media(min-width: 750px){     
+  margin-bottom:96px;
+}
+}
+
+ .section__titleDiv{
+ height:80px;
+  width:100%;
+  margin-top:56px;
+ @media(min-width: 750px){  
+ display:block; 
+ height:148px;
+   margin-top:96px;
+  }
+}
+
+.section__line{
+  border-bottom: 4px solid #F9D023;
+  width: 65px;
+  height:32px; 
+ @media(min-width: 750px){  
+  display:block;
+  border-bottom: 6px solid #F9D023;
+  width: 100px;
+  height:48px;
+ }
+}
+
+.H1Font{
+  color: rgb(255, 255, 255);
+font-family: Alata;
+font-size: 50px;
+font-weight: 400;
+line-height: 60px;
+letter-spacing: 0px;
+text-align: center;
+ @media(min-width: 750px){ 
+  color: rgb(255, 255, 255);
+font-family: Alata;
+font-size: 80px;
+font-weight: 400;
+line-height: 130px;
+letter-spacing: 0px;
+text-align: center; 
+};
+  @media(min-width: 1100px){
+    font-size: 115px;
+  }}
+
+.desktopH2{
+  color: rgb(11, 13, 33);
+font-family: Alata;
+font-size: 90px;
+font-weight: 400;
+line-height: 100px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.H2Font{
+font-family: Alata;
+font-size: 40px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0px;
+text-align: left; 
+   @media(min-width: 750px){ 
+color: rgb(11, 13, 33);
+font-family: Alata;
+font-size: 90px;
+font-weight: 400;
+line-height: 100px;
+letter-spacing: 0px;
+text-align: left;
+   }
+}
+
+.H3Font{
+/* Mobile/H3 */
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 22px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+   @media(min-width: 750px){ 
+/* Desktop/H3 */
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0px;
+text-align: left;
+   }
+}
+.H4Font{
+/* Mobile/H4 */
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+   @media(min-width: 750px){ 
+/* Desktop/H4 */
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0px;
+text-align: left;
+   }
+}
+
+.body1Font{
+  color: rgb(255, 255, 255);
+font-family: Sofia Pro;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: center;
+   @media(min-width: 750px){ 
+     color: rgb(255, 255, 255);
+font-family: Sofia Pro;
+font-size: 20px;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0px;
+text-align: center;
+   };
+    @media(min-width: 1100px){
+    font-size: 25px;
+  }
+}
+
+.desktopMenuItems{
+ font-family: Sofia Pro;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: right; 
+  color: rgb(11, 13, 33);
+}
+
+
+.buttonFont{
+  color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 14px;
+font-weight: 600;
+line-height: 14px;
+letter-spacing: 0.6px;
+text-align: left;
+}
+
+.contactButton{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width: 196px;
+  height: 48px;
+  flex-shrink: 0;
+  background: var(--Yellow, #F9D023);
+  color: var(--Black, #0B0D21);
+  margin-top: 52px;
+}
+
+.contactButtonInner{
+  display:flex;
+  gap: 5px;
+  width: 124px;
+height: 14px;
+}
+
+.supportTextFont{
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+ @media(min-width: 750px){
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 18px;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}}
+
+.supportTextFont p{
+  margin-top: 5px;
+}
+
+.supportTextFont b{
+  font-weight: 700;
+}
+.supportTextFont span{
+  font-style: italic;
+}
+.numbersFont{
+  color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 30px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0px;
+text-align: center;
+   @media(min-width: 750px){
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 48px;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: 0px;
+text-align: center;
+}}
+
+.body3Font{
+  /* Mobile/Body 3 */
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 12px;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: center;
+    @media(min-width: 750px){
+      /* Desktop/Body 3 */
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: center;
+}}
+
+.body2Font{
+/* Mobile/Body 2 */
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+
+ @media(min-width: 750px){ 
+color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 18px;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}}
+
+.inputFont::placeholder {
+ 
+  color: rgb(11, 13, 33);
+font-family: Sofia Pro;
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.6px;
+text-align: left;
+rgb(11, 13, 33);
+ 
+}
