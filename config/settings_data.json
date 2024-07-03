@@ -1,1 +1,27 @@
-{"current":{}}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "current": {
+    "sections": {
+      "sectionHeader": {
+        "type": "sectionHeader",
+        "settings": {
+          "padding": 24,
+          "logo_width": 100,
+          "navigation": "main-menu",
+          "buttonText": "CONTACT US8"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
