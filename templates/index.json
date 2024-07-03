@@ -151,7 +151,7 @@
           "type": "list",
           "settings": {
             "serviceItem-header": "header",
-            "serviceItem-text": "my_string"
+            "serviceItem-text": "<ul>\n<li>New venture strategy<\/li>\n<li>Go-to-market architecture<\/li>\n<li>M&A support<\/li>\n<li>Marketing and partnerships<\/li>\n<\/ul>"
           }
         }
       },
