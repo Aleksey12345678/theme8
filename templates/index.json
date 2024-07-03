@@ -38,9 +38,47 @@
       ],
       "settings": {
       }
+    },
+    "section2_NDKxUa": {
+      "type": "section2",
+      "blocks": {
+        "heading_nm9X7d": {
+          "type": "heading",
+          "settings": {
+            "heading2": "Mission"
+          }
+        },
+        "text_CHQNnh": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "image_HL43JV": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "list_LmqKfG": {
+          "type": "list",
+          "settings": {
+            "imglist-hader": "header",
+            "imglist-text": "text"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nm9X7d",
+        "text_CHQNnh",
+        "image_HL43JV",
+        "list_LmqKfG"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "section1_zFAyCJ"
+    "section1_zFAyCJ",
+    "section2_NDKxUa"
   ]
 }
