@@ -1,6 +1,177 @@
+{{ 'section2Css.css' | asset_url | stylesheet_tag }}
+{{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
+<div class="section">
+  <div class="section__container">
+    <div class="section__inner">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'heading' %}
+            <div class="section__titleDiv">
+              {% if block.settings.heading2.size == 0 %}
+                <h1 class="H2Font">Mission</h1>
+              {% else %}
+                <h1 class="H2Font">{{ block.settings.heading2 }}</h1>
+              {% endif %}
+              <div class="section__line "><span> </span></div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+
+      <div class="section2__missionDesc">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'image' %}
+              {% if block.settings['image-section2'] == blank %}
+                <div class="section2__image"><img src="{{ '2438 2.jpeg'| asset_url }}"></div>
+              {% else %}
+                <div class="section2__image"><img src="{{ block.settings.image-section2| img_url: "master"}}"></div>
+              {% endif %}
+            {% when 'text' %}
+              {% if block.settings.text.size == 0 %}
+                <div class="section2__textDiv">
+                  <div class="section2__text supportTextFont">
+                    <p>
+                      <b> Energy Transition is our core and only focus.</b> We structure complex, meaningfully large
+                      renewable natural gas (RNG) and power transactions for companies committed to
+                      environmentally-sound, commercially-ready solutions.
+                    </p>
+                    <p>
+                      <span>
+                        Our principals are experienced practitioners who have run companies, originated and closed
+                        complex deals, advocated and negotiated favorable policy and advanced technological innovation.
+                        With over three decades of combined experience in renewables specifically, our customers chose
+                        us, every time, for our unparalleled industry knowledge, market acumen, professionalism and
+                        commitment to their prosperity.
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              {% else %}
+                <div class="section2__textDiv">
+                  <div class="section2__text">{{ block.settings.text }}</div>
+                </div>
+              {% endif %}
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="section2__imglist">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'list' %}
+              <div class="section2__imglist_item">
+                {% if block.settings['imglist-section2-image'] == blank %}
+                  <div class="ssection2__imglist_item_img"><img src="{{ 'Group 261.png'| asset_url }}"></div>
+                {% else %}
+                  <div class="ssection2__imglist_item_img">
+                    <img src="{{ block.settings.imglist-section2-image| img_url: "master"}}">
+                  </div>
+                {% endif %}
+                <!-- <img src="{{ block.settings.imglist-section2-image| img_url: "master"}}"> -->
+
+                <div class="section2_imglist_item_header numbersFont">
+                  <p>{{ block.settings['imglist-hader'] }}</p>
+                </div>
+                <div class="section2__imglist_item_text body3Font">
+                  <p>{{ block.settings['imglist-text'] }}</p>
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Section- 2",
+  "settings": [
+
+  ],
+  "blocks":[
+   { "type":"heading",
+    "name":"Title-section2",
+    "limit":1,
+    "settings":[
+      {
+       "type":"inline_richtext",
+        "id":"heading2",
+        "default":"Mission",
+        "label":"Title"
+      }
+    ]
+   },
+     {
+      "type":"image",
+      "name":"Image-section2",
+      "limit":3,
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"image-section2",
+          "label":"Image"
+        }
+      ]
+    },
+    {
+      "type":"text",
+      "name":"Text-section2",
+      "limit":3,
+      "settings":[
+        {
+          "type":"inline_richtext",
+          "id":"text",
+          "label":"Text"
+        }
+      ]
+
+    },
+       {
+      "type":"list",
+      "name":"imglist-section2",
+      "limit":10,
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"imglist-section2-image",
+          "label":"Image"
+        },
+        {
+          "type":"inline_richtext",
+          "id":"imglist-hader",
+          "default":"header",
+          "label":"Header"
+        },
+        {
+          "type":"inline_richtext",
+          "id":"imglist-text",
+          "default":"text",
+          "label":"Text"
+        }
+      ]
+
+    }
+
+  ],
+  "presets":[
+    {
+      "name":"section2",
+        "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+          {
+            "type":"list"
+          }
+
+
+      ]
+    }
+  ]
+}
 {% endschema %}
