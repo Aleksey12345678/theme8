@@ -42,24 +42,24 @@
     "section2_NDKxUa": {
       "type": "section2",
       "blocks": {
-        "heading_nm9X7d": {
+        "heading_z4yCNw": {
           "type": "heading",
           "settings": {
             "heading2": "Mission"
           }
         },
-        "image_HL43JV": {
+        "image_FmQGJz": {
           "type": "image",
           "settings": {
           }
         },
-        "text_CHQNnh": {
+        "text_GHPLzV": {
           "type": "text",
           "settings": {
             "text": ""
           }
         },
-        "list_LmqKfG": {
+        "list_9tzJyT": {
           "type": "list",
           "settings": {
             "imglist-hader": "header",
@@ -68,10 +68,10 @@
         }
       },
       "block_order": [
-        "heading_nm9X7d",
-        "image_HL43JV",
-        "text_CHQNnh",
-        "list_LmqKfG"
+        "heading_z4yCNw",
+        "image_FmQGJz",
+        "text_GHPLzV",
+        "list_9tzJyT"
       ],
       "settings": {
       }
