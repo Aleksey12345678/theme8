@@ -74,6 +74,13 @@
             "imglist-hader": "$4B",
             "imglist-text": "in cumulative Renewable Energy and RNG closings"
           }
+        },
+        "list_qxXzyj": {
+          "type": "list",
+          "settings": {
+            "imglist-hader": "30Yrs",
+            "imglist-text": "of collective industry experience"
+          }
         }
       },
       "block_order": [
@@ -81,7 +88,8 @@
         "image_FmQGJz",
         "text_GHPLzV",
         "list_9tzJyT",
-        "list_fUyGCp"
+        "list_fUyGCp",
+        "list_qxXzyj"
       ],
       "settings": {
       }
