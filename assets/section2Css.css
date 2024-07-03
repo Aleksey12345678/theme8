@@ -1,0 +1,124 @@
+/* .section2{
+ display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width:100%; 
+}
+
+.section2__container{            
+  display: flex;
+  justify-content: center;
+  max-width:1640px;
+  width:100%;      
+   }  
+
+.section2__inner{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  margin-bottom:56px;
+  @media(min-width: 750px){ 
+    margin-bottom:96px;
+  }
+}
+
+
+.section2__line{
+  border-bottom: 4px solid #F9D023;
+  width: 65px;
+  height:32px; 
+ @media(min-width: 750px){  
+  display:block;
+  border-bottom: 6px solid #F9D023;
+  width: 100px;
+  height:48px;
+ }
+} */
+
+.section2__missionDesc{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  gap: 32px;
+  @media(min-width: 750px){  
+flex-direction:row;
+    margin-top: 56px;
+     gap: 54px;
+  }
+}
+.section2__image{   
+  width:100%;
+   @media(min-width: 750px){  
+  margin-top:56px
+   width: 100%;
+  max-width:486px;
+  height:315px;
+}}
+
+.section2__image img{ 
+  width:100%;
+ @media(min-width: 750px){ 
+  width:100%;
+  max-width:486px;
+
+}}
+.section2__textDiv{  
+  width:100%;
+  @media(min-width: 750px){   
+  max-width:570px; 
+}
+}
+
+.section2__imglist{
+display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:70px;
+  width: 100%;
+  row-gap: 40px;
+  column-gap: 10px;
+    @media(min-width: 750px){ 
+   flex-wrap:nowrap;
+   margin-top:96px;
+   gap: 10px;
+ }; 
+   @media(min-width: 850px){ 
+     gap: 30px;
+}}
+
+.section2__imglist_item{
+  display:flex;  
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  width:140px;
+   @media(min-width: 750px){ 
+     width:198px;    
+  
+}}
+ 
+.ssection2__imglist_item_img{
+  display:flex;
+   justify-content:center;
+  max-width:56px;
+   @media(min-width: 750px){ 
+ max-width:72px;
+   
+}} 
+
+.section2_imglist_item_header{
+  margin-top:16px; 
+}
+
+.section2__imglist_item_text{
+margin-top:8px;
+  
+}
