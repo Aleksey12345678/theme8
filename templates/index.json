@@ -130,7 +130,7 @@
         "list_CwhyeY": {
           "type": "list",
           "settings": {
-            "serviceItem-header": "header",
+            "serviceItem-header": "Transaction Support",
             "serviceItem-text": "<ul>\n<li>Renewable Natural Gas offtakes<\/li>\n<li>RIN, RTC, REC and LCFS brokerage<\/li>\n<li>Renewable PPA origination<\/li>\n<li>Contract negotiations and structuring<\/li>\n<\/ul>"
           }
         },
@@ -143,14 +143,14 @@
         "list_MkrDfw": {
           "type": "list",
           "settings": {
-            "serviceItem-header": "header",
+            "serviceItem-header": "Enterprise Strategy",
             "serviceItem-text": "<ul>\n<li>Market advisory<\/li>\n<li>Risk management<\/li>\n<li>Capital sourcing or deployment<\/li>\n<li>Resource optimization<\/li>\n<\/ul>"
           }
         },
         "list_fPrLHR": {
           "type": "list",
           "settings": {
-            "serviceItem-header": "header",
+            "serviceItem-header": "Market Development",
             "serviceItem-text": "<ul>\n<li>New venture strategy<\/li>\n<li>Go-to-market architecture<\/li>\n<li>M&A support<\/li>\n<li>Marketing and partnerships<\/li>\n<\/ul>"
           }
         }
