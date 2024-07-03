@@ -48,15 +48,15 @@
             "heading2": "Mission"
           }
         },
+        "image_HL43JV": {
+          "type": "image",
+          "settings": {
+          }
+        },
         "text_CHQNnh": {
           "type": "text",
           "settings": {
             "text": ""
-          }
-        },
-        "image_HL43JV": {
-          "type": "image",
-          "settings": {
           }
         },
         "list_LmqKfG": {
@@ -69,8 +69,8 @@
       },
       "block_order": [
         "heading_nm9X7d",
-        "text_CHQNnh",
         "image_HL43JV",
+        "text_CHQNnh",
         "list_LmqKfG"
       ],
       "settings": {
