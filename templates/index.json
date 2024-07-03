@@ -111,10 +111,65 @@
       ],
       "settings": {
       }
+    },
+    "section3_JARwGa": {
+      "type": "section3",
+      "blocks": {
+        "heading_ijB7tY": {
+          "type": "heading",
+          "settings": {
+            "heading3": "Services"
+          }
+        },
+        "text_mLdeqg": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "list_CwhyeY": {
+          "type": "list",
+          "settings": {
+            "serviceItem-header": "header",
+            "serviceItem-text": "<ul>\n<li>Renewable Natural Gas offtakes<\/li>\n<li>RIN, RTC, REC and LCFS brokerage<\/li>\n<li>Renewable PPA origination<\/li>\n<li>Contract negotiations and structuring<\/li>\n<\/ul>"
+          }
+        },
+        "text2_9zqQ83": {
+          "type": "text2",
+          "settings": {
+            "text2": "Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs."
+          }
+        },
+        "list_MkrDfw": {
+          "type": "list",
+          "settings": {
+            "serviceItem-header": "header",
+            "serviceItem-text": "my_string"
+          }
+        },
+        "list_fPrLHR": {
+          "type": "list",
+          "settings": {
+            "serviceItem-header": "header",
+            "serviceItem-text": "my_string"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ijB7tY",
+        "text_mLdeqg",
+        "list_CwhyeY",
+        "text2_9zqQ83",
+        "list_MkrDfw",
+        "list_fPrLHR"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "section1_zFAyCJ",
-    "section2_NDKxUa"
+    "section2_NDKxUa",
+    "section3_JARwGa"
   ]
 }
