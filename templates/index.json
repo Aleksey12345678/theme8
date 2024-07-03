@@ -81,6 +81,22 @@
             "imglist-hader": "30Yrs",
             "imglist-text": "of collective industry experience"
           }
+        },
+        "list_8nhE86": {
+          "type": "list",
+          "settings": {
+            "imglist-section2-image": "shopify:\/\/shop_images\/Group_260.png",
+            "imglist-hader": "$300M",
+            "imglist-text": "in capital placed for client ventures"
+          }
+        },
+        "list_iawgJB": {
+          "type": "list",
+          "settings": {
+            "imglist-section2-image": "shopify:\/\/shop_images\/Group_259.png",
+            "imglist-hader": "100%",
+            "imglist-text": "independent and unbiased advice"
+          }
         }
       },
       "block_order": [
@@ -89,7 +105,9 @@
         "text_GHPLzV",
         "list_9tzJyT",
         "list_fUyGCp",
-        "list_qxXzyj"
+        "list_qxXzyj",
+        "list_8nhE86",
+        "list_iawgJB"
       ],
       "settings": {
       }
