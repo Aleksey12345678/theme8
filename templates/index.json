@@ -66,13 +66,22 @@
             "imglist-hader": "$1B",
             "imglist-text": "in closed RNG transactions in 2021 alone"
           }
+        },
+        "list_fUyGCp": {
+          "type": "list",
+          "settings": {
+            "imglist-section2-image": "shopify:\/\/shop_images\/Group_262.png",
+            "imglist-hader": "$4B",
+            "imglist-text": "in cumulative Renewable Energy and RNG closings"
+          }
         }
       },
       "block_order": [
         "heading_z4yCNw",
         "image_FmQGJz",
         "text_GHPLzV",
-        "list_9tzJyT"
+        "list_9tzJyT",
+        "list_fUyGCp"
       ],
       "settings": {
       }
