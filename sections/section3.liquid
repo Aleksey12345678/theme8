@@ -1,6 +1,187 @@
+{{ 'section3Css.css' | asset_url | stylesheet_tag }}
+{{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
+<div class="section">
+  <div class="section__container section3__container">
+    <div class="section__inner">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'heading' %}
+            <div class="section__titleDiv">
+              {% if block.settings.heading3.size == 0 %}
+                <h1 class="H2Font">Services</h1>
+              {% else %}
+                <h1 class="H2Font">{{ block.settings.heading3 }}</h1>
+              {% endif %}
+
+              <div class="section__line section3__line"><span> </span></div>
+            </div>
+
+          {% when 'text' %}
+            {% if block.settings.text.size == 0 %}
+              <div class="section3__textDiv">
+                <div class="section3__text body2Font">
+                  <p>
+                    Our clients are at the forefront of energy transition and innovation. Their mandate is complex:
+                    balance project needs with customer demands, lofty investment targets and development complexities.
+                    Layer on market volatility and regulatory risk and the scope becomes less manageable in-house. This
+                    is where Marvel comes in. We understand the task and bring deep expertise to addressing these
+                    challenges.
+                  </p>
+                </div>
+              </div>
+            {% else %}
+              <div class="section3__textDiv">
+                <div class="section3__text body2Font">{{ block.settings.text }}</div>
+              </div>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+      <div class="section3__serviceList">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'list' %}
+              <div class="section3__serviceItem">
+                <div class="section3__serviceItem_header H3Font">
+                  <p>{{ block.settings['serviceItem-header'] }}</p>
+                </div>
+                <div class="section3__serviceItem_text body2Font">
+                  <p>{{ block.settings['serviceItem-text'] }}</p>
+                </div>
+                <div class="section3__serviceItem_img">
+                  {% if block.settings['serviceItem-image'] == blank %}
+                    <img src="{{ 'Group 163.png'| asset_url }}">
+                  {% else %}
+                    <img src="{{ block.settings.serviceItem-image| img_url: "master"}}">
+                  {% endif %}
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'text2' %}
+            {% if block.settings.text2.size == 0 %}
+              <div class="section3__text2Div body2Font">
+                <p>
+                  Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities
+                  change. We understand. We are agile, creative and immediately responsive to your various working
+                  styles, governance requirements and evolving needs.
+                </p>
+              </div>
+            {% else %}
+              <div class="section3__text2Div body2Font">
+                {{ block.settings.text2 }}
+              </div>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<style>
+  .section3__serviceItem_text ul{
+        list-style-image: url("{{ 'Rectangle 326.svg' | asset_url }}");
+     list-style-position: outside;
+    line-height: 2em;
+
+   }
+</style>
 {% schema %}
+{
+  "name": "section3",
+  "settings": [],
+   "blocks":[
+   {
+     "type":"heading",
+    "name":"Title-section3",
+    "limit":1,
+    "settings":[
+      {
+       "type":"inline_richtext",
+        "id":"heading3",
+        "default":"Services",
+        "label":"Header"
+      }
+    ]
+   },
+
+    {
+      "type":"text",
+      "name":"Text-section3",
+      "limit":2,
+      "settings":[
+        {
+          "type":"inline_richtext",
+          "id":"text",
+          "label":"Text1"
+        }
+      ]
+
+    },
+       {
+      "type":"list",
+      "name":"imglist-section3",
+      "limit":10,
+      "settings":[
+
+        {
+          "type":"inline_richtext",
+          "id":"serviceItem-header",
+          "default":"header",
+          "label":"Service Header"
+        },
+        {
+          "type":"liquid",
+          "id":"serviceItem-text",
+          "default":"my_string",
+          "label":"Service Text"
+        },
+         {
+          "type":"image_picker",
+          "id":"serviceItem-image",
+
+          "label":"Service Image"
+        }
+      ]
+
+    },
+
+    {
+      "type":"text2",
+      "name":"Text2-section3",
+      "limit":2,
+      "settings":[
+        {
+          "type":"inline_richtext",
+          "id":"text2",
+           "default":" Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs.",
+          "label":"Text 2"
+        }
+      ]
+
+    }
+
+  ],
+  "presets":[
   {
-    "name": "Section name",
-    "settings": []
+    "name":"section3",
+    "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+      {
+          "type": "list"
+        },
+       {
+          "type": "text2"
+        }
+      ]
+
   }
+]
+}
 {% endschema %}
