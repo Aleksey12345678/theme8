@@ -1,6 +1,193 @@
+{{ 'sectionFooterCss.css' | asset_url | stylesheet_tag }}
+{{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
+<div class="section">
+  <div class="section__container sectionFooter__container">
+    <div class="section__inner">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'heading' %}
+            <div class="section__titleDiv">
+              {% if block.settings['heading-sectionFooter'].size == 0 %}
+                <h1 class="section__title sectionFooter__title H2Font">Contact</h1>
+              {% else %}
+                <h1 class="section__title sectionFooter__title H2Font">
+                  {{ block.settings['heading-sectionFooter'] }}
+                </h1>
+              {% endif %}
+
+              <div class="section__line"><span> </span></div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+      <div class="sectionFooter__blocks">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'textblock' %}
+              <div class="sectionFooter__textBlock">
+                <div class="sectionFooter__textBlock_firstString H3Font">
+                  {% if block.settings.textFirstString.size == 0 %}
+                    <p>Email us here:</p>
+                  {% else %}
+                    <p>{{ block.settings.textFirstString }}</p>
+                  {% endif %}
+                </div>
+                <div class="sectionFooter__textBlock_email H3Font">
+                  {% if block.settings.email.size == 0 %}
+                    <p>info@marvelpowergroup.com</p>
+                  {% else %}
+                    <p>{{ block.settings.email }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            {% when 'inputblock' %}
+              <div class="sectionFooter_inputBlock">
+                <div class="sectionFooter__inputBlock_text H3Font">
+                  {% if block.settings.inputBlockText.size == 0 %}
+                    <p>Stay in the loop by getting on our mailing list</p>
+                  {% else %}
+                    <p>{{ block.settings.inputBlockText }}</p>
+                  {% endif %}
+                </div>
+                {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+                  <div class="sectionFooter_inputBlock_contact__fields inputFont">
+                    <div>
+                      <input
+                        class="inputFont"
+                        autocomplete="name"
+                        type="text"
+                        id="ContactForm-name"
+                        name="contact[{{ block.settings.inputBlockName}}]"
+                        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                        placeholder="{{ block.settings.inputBlockName }}"
+                      >
+                    </div>
+                    <div>
+                      <input
+                        class="inputFont"
+                        autocomplete="email"
+                        type="email"
+                        id="ContactForm-email"
+
+                        name="contact[email]"
+                        spellcheck="false"
+                        autocapitalize="off"
+                        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                        aria-required="true"
+
+                        placeholder="{{ block.settings.inputBlockEmail }}"
+                      >
+                    </div>
+                    <div>
+                      <input
+                        class="inputFont"
+                        autocomplete="company"
+                        type="text"
+                        id="ContactForm-company"
+                        name="contact[{{ block.settings.inputBlockCompany }}]"
+                        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                        placeholder="{{ block.settings.inputBlockCompany }}"
+                      >
+                    </div>
+                    <div class="sectionFooter_inputBlock__buttonDiv">
+                      {% render 'sendButton' %}
+                    </div>
+                  </div>
+                {%- endform -%}
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 {% schema %}
+ {
+  "name": "sectionFooter",
+  "settings": [
+
+
+  ],
+   "blocks":[
+   {
+     "type":"heading",
+    "name":"Title-sectionFooter",
+    "limit":1,
+    "settings":[
+      {
+       "type":"inline_richtext",
+        "id":"heading-sectionFooter",
+        "default":"Contact",
+        "label":"Title"
+      }
+    ]
+   },
+      {
+      "type":"textblock",
+      "name":"TextBlock-sectionFooter",
+      "limit":1,
+      "settings":[
+        {
+          "type":"inline_richtext",
+          "id":"textFirstString",
+          "default":"Email us here:",
+          "label":"Support text"
+        },
+         {
+          "type":"inline_richtext",
+          "id":"email",
+           "default":"info@marvelpowergroup.com",
+          "label":"Email"
+        }
+   ]
+      },
+     {
+      "type":"inputblock",
+      "name":"InputBlock-sectionFooter",
+      "limit":1,
+      "settings":[
+        {
+          "type":"inline_richtext",
+          "id":"inputBlockText",
+          "default":"Stay in the loop by getting on our mailing list",
+          "label":"Inputblock support text"
+        },
+         {
+          "type":"inline_richtext",
+          "id":"inputBlockName",
+          "default":"  NAME*",
+          "label":"input name"
+        },
+         {
+          "type":"inline_richtext",
+          "id":"inputBlockEmail",
+          "default":"  EMAIL*",
+          "label":"input email"
+        },
+        {
+          "type":"inline_richtext",
+          "id":"inputBlockCompany",
+          "default":"  COMPANY*",
+          "label":"input company"
+        }
+      ]
+      }
+   ] ,
+
+  "presets":[
   {
-    "name": "Section name",
-    "settings": []
+    "name":"sectionFooter",
+    "blocks": [
+        {
+          "type": "heading"
+        },
+       {
+          "type": "textblock"
+        },
+       {
+          "type": "inputblock"
+        }
+      ]
+
   }
+]
+}
 {% endschema %}
