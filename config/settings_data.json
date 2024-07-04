@@ -18,6 +18,40 @@
           "navigation": "main-menu",
           "buttonText": "CONTACT US"
         }
+      },
+      "sectionFooter": {
+        "type": "sectionFooter",
+        "blocks": {
+          "heading_Pm7iCD": {
+            "type": "heading",
+            "settings": {
+              "heading-sectionFooter": "Contact"
+            }
+          },
+          "textblock_LQGrre": {
+            "type": "textblock",
+            "settings": {
+              "textFirstString": "Email us here:",
+              "email": "info@marvelpowergroup.com"
+            }
+          },
+          "inputblock_pWdtWH": {
+            "type": "inputblock",
+            "settings": {
+              "inputBlockText": "Stay in the loop by getting on our mailing list",
+              "inputBlockName": "NAME*",
+              "inputBlockEmail": "EMAIL*",
+              "inputBlockCompany": "COMPANY*"
+            }
+          }
+        },
+        "block_order": [
+          "heading_Pm7iCD",
+          "textblock_LQGrre",
+          "inputblock_pWdtWH"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
