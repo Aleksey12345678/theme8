@@ -20,11 +20,8 @@
   flex-direction: column;
   width: 100%;
   max-width: 540px;
-  padding: 0 0 0 24px;
- 
-  
+  padding: 0 0 0 24px;  
   border-radius: 0px 0px 0px 64px;
-
 /* Card */
 box-shadow: 0px 0px 40px 0px rgba(0, 13, 129, 0.08);
 /* White */
