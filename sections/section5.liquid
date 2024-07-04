@@ -1,6 +1,169 @@
+{{ 'section5Css.css' | asset_url | stylesheet_tag }}
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+
+<div class="section">
+  <div class="section__container">
+    <div class="section__inner">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'heading' %}
+            <div class="section__titleDiv">
+              {% if block.settings.heading5.size == 0 %}
+                <h1 class="H2Font">News</h1>
+              {% else %}
+                <h1 class="H2Font">{{ block.settings.heading5 }}</h1>
+              {% endif %}
+              <div class="section__line"><span> </span></div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+      <div class="section5__news">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'news' %}
+              <div class="section5__new">
+                <div class="section5__new_img1">
+                  {% if block.settings.section5_new_img == blank %}
+                    <div class="section5__new_img_div">
+                      <img src="{{ 'denys-nevozhai-dHNF-iBfbrA-unsplash.png'| asset_url }}">
+                    </div>
+                  {% else %}
+                    <div class="section5__new_img_div">
+                      <img src="{{ block.settings.section5_new_img| img_url: "master"}}">
+                    </div>
+                  {% endif %}
+                </div>
+                <div class="section5__new_description">
+                  <div class="section5__new_logoimg_div">
+                    {% if block.settings.section5_new_logoimg == blank %}
+                      <img src="{{ 'Group 239.png'| asset_url }}">
+                    {% else %}
+                      <img src="{{ block.settings.section5_new_logoimg| img_url: "master"}}">
+                    {% endif %}
+                  </div>
+                  <div class="section5__new_link H4Font">
+                    {% if block.settings.section5_new_href.size == 0 %}
+                      <a href="#">
+                        <p>Marvel Celebrates Anniversary, $1B in Closed Transaction</p>
+                      </a>
+                    {% else %}
+                      <a href="#">
+                        <p>{{ block.settings.section5_new_href }}</p>
+                      </a>
+                    {% endif %}
+                  </div>
+                  <div class="section5__new_bottomdiv">
+                    <div class="section5__new_bottomdiv_date body3Font">
+                      {% if block.settings.section5_new_date == 0 %}
+                        <p>July 13, 2021</p>
+                      {% else %}
+                        <p>{{ block.settings.section5_new_date }}</p>
+                      {% endif %}
+                    </div>
+                    <div class="section5__new_bottomdiv_img">
+                      {% if block.settingssection5_new_bottomimg == blank %}
+                        <img src="{{ 'Group 211.png'| asset_url }}">
+                      {% else %}
+                        <img src="{{ block.settings.section5_new_bottomimg| img_url: "master"}}">
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+  <script src="{{ 'jquery-1.11.0.min.js' | asset_url }}" defer></script>
+  <script src="{{ 'jquery-migrate-1.2.1.min.js' | asset_url }}" defer></script>
+  <script src="{{ 'slick.min.js' | asset_url }}" defer></script>
+-->
+{{ 'jquery-1.11.0.min.js' | asset_url | script_tag }}
+{{ 'jquery-migrate-1.2.1.min.js' | asset_url | script_tag }}
+{{ 'slick.min.js' | asset_url | script_tag }}
+<script>
+  $('.section5__news').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+</script>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+  "name": "section5",
+  "settings": [],
+   "blocks":[
+   {
+     "type":"heading",
+    "name":"Title-section5",
+    "limit":1,
+    "settings":[
+      {
+       "type":"inline_richtext",
+        "id":"heading5",
+        "default":"News",
+        "label":"Title"
+      }
+    ]
+   },
+       {
+      "type":"news",
+      "name":"news-section5",
+      "limit":10,
+      "settings":[
+         {
+          "type":"image_picker",
+          "id":"section5_new_img",
+          "label":"New image"
+        },
+        {
+          "type":"image_picker",
+          "id":"section5_new_logoimg",
+          "label":"Logo image"
+        },
+
+        {
+          "type":"inline_richtext",
+          "id":"section5_new_href",
+          "default":"Marvel  Celebrates Anniversary, $1B inВ Closed Transactions",
+          "label":"New text"
+        },
+         {
+          "type":"inline_richtext",
+          "id":"section5_new_date",
+          "default":"July 13, 2021",
+          "label":"New date"
+        },
+         {
+          "type":"image_picker",
+          "id":"section5_new_bottomimg",
+          "label":"Bottom image"
+        }
+
+      ]
+
+    }
+       ],
+  "presets":[
+  {
+    "name":"section5",
+    "blocks": [
+        {
+          "type": "heading"
+        },
+      {
+        "type":"news"
+      }
+
+      ]
+
   }
+]
+}
 {% endschema %}
