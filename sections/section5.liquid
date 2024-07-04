@@ -86,12 +86,20 @@
 {{ 'jquery-migrate-1.2.1.min.js' | asset_url | script_tag }}
 {{ 'slick.min.js' | asset_url | script_tag }}
 <script>
+    $('.section5__news').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 2000,
+   });
+   @media(min-width: 750px){
   $('.section5__news').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 2000,
+   });
+   };
 </script>
 
 {% schema %}
