@@ -1,0 +1,179 @@
+.section4__employeeList{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width:100%;
+  gap: 32px;  
+   @media(min-width: 750px){
+    
+  margin-top: 56px;
+  gap: 30px;
+};
+   @media(min-width: 860px){
+     flex-direction: row;
+
+}
+}
+
+
+.section4__employee{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 540px;
+  padding: 0 0 0 24px;
+  /* Card */
+box-shadow: 0px 0px 40px 0px rgba(0, 13, 129, 0.08);
+/* White */
+background: rgb(255, 255, 255);
+   @media(min-width: 750px){
+     padding: 0 0 0 64px;}
+  border-radius: 0px 0px 0px 64px;
+
+/* Card */
+box-shadow: 0px 0px 40px 0px rgba(0, 13, 129, 0.08);
+/* White */
+background: rgb(255, 255, 255);
+}
+
+.section4__employee_topBlock{
+  display:flex;
+  flex-direction: row;
+ 
+  width: 100%;
+   
+   @media(min-width: 750px){ 
+  gap: 32px;
+}
+}
+
+.section4__employee_topBlock_innerLeftBlock{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  max-width:216px;
+  margin-left: 0px;
+}
+
+.section4__employee_meetLink{
+   width:86px;
+  height:16px;
+  margin-top: 21px;
+  @media(min-width: 750px){ 
+  width:167px;
+  height:18px;
+  margin-top:32px;
+}
+}
+.section4__employee_meet_img{
+    width:86px;
+  height:16px; 
+  @media(min-width: 750px){ 
+  width:167px;
+  height:18px;
+}
+}
+.section4__employee_meet_img img{
+    width:86px;
+  height:16px; 
+  @media(min-width: 750px){ 
+  width:167px;
+  height:18px;
+}
+}
+
+
+.section4__employee_name{
+  margin-top: 24px;
+  width:100%;
+ @media(min-width: 750px){ 
+  margin-top: 48px;
+ }
+}
+
+.section4__employee_post{
+ margin-top: 8px;
+  width:100%;
+  
+ @media(min-width: 750px){ 
+  margin-top: 16px;
+ }
+}
+
+.section4__employee_post p{
+  text-align: left;}
+
+.section4__employee_photo{  
+  width:100%;
+  min-width:136px;
+  max-width:228px;
+  margin-right: 0px;
+
+}
+
+.section4__employee_photo_img img{
+  width:100%;
+  min-width:136px;
+  max-width:228px;
+}
+
+.section4__employee_bottomBlock{
+  padding:0 24px 0 0;
+  margin-bottom:27px;
+  height: 685px;
+   @media(min-width: 750px){ 
+  padding:0 64px 0 0;
+  margin-bottom:40px;
+     height: 620px;
+ }
+}
+
+.section4__employee_text{
+margin-top:32px;
+
+   @media(min-width: 750px){ 
+  margin-top: 40px;
+ }
+}
+
+
+.section4__employee_header{
+  margin-top: 32px;
+   @media(min-width: 750px){ 
+  margin-top: 40px;
+   }
+}
+
+
+.section4__employee_ul{
+margin-top: 16px;
+}
+
+
+
+
+.section4__employee_contacts{
+  display:flex;
+  margin-top:35px; 
+  gap:28px;
+  height:18px;
+  width: 100%;
+  justify-content: flex-end; 
+   @media(min-width: 750px){ 
+ 
+  gap:22px;
+  height:32px;
+   }
+    @media(min-width: 1000px){ 
+  margin-top:-20px; 
+   }
+}
+
+.section4__employee_contacts_img img{  
+  width:18px;
+  height:18px;
+  @media(min-width: 750px){
+  width:32px;
+  height:32px;
+  
+}}
