@@ -242,13 +242,23 @@
             "section5_new_href": "Marvel Power Group joins RNG Coalition",
             "section5_new_date": "February 03, 2021"
           }
+        },
+        "news_f3XXTN": {
+          "type": "news",
+          "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/denys-nevozhai-dHNF-iBfbrA-unsplash_1.png",
+            "section5_new_logoimg": "shopify:\/\/shop_images\/Group.png",
+            "section5_new_href": "Marvel Turns 3, Expands Biomethane Services to Canada and Europe",
+            "section5_new_date": "July 06, 2022"
+          }
         }
       },
       "block_order": [
         "heading_UCxDp3",
         "news_ANkpVb",
         "news_YEwhbi",
-        "news_xgCaXk"
+        "news_xgCaXk",
+        "news_f3XXTN"
       ],
       "settings": {
       }
