@@ -165,11 +165,54 @@
       ],
       "settings": {
       }
+    },
+    "section4_EFnPxc": {
+      "type": "section4",
+      "blocks": {
+        "heading_HpQnpA": {
+          "type": "heading",
+          "settings": {
+            "heading4": "Team"
+          }
+        },
+        "employee_kBmTxD": {
+          "type": "employee",
+          "settings": {
+            "section4_employee_name": "Katherine Ryzhaya",
+            "section4_employee_post": "Founder and CEO",
+            "section4_employee_text": "AВ serial entrepreneur and industry expert, Katherine has nearly 20 years ofВ experience inВ running infrastructure businesses and closing complex energy transactions. AsВ the sole founder ofВ Marvel, inВ 2019, Katherine saw anВ opportunity toВ run aВ business her wayВ вЂ” leading with high integrity, unmatched focus onВ service quality and utmost commitment toВ driving customersвЂ™ yields.",
+            "section4_employee_history_header": "Career History",
+            "section4_employee_history": "history",
+            "section4_employee_education_header": "Education",
+            "section4_employee_education": "history"
+          }
+        },
+        "employee_JLrdm7": {
+          "type": "employee",
+          "settings": {
+            "section4_employee_name": "Katherine Ryzhaya",
+            "section4_employee_post": "Founder and CEO",
+            "section4_employee_text": "AВ serial entrepreneur and industry expert, Katherine has nearly 20 years ofВ experience inВ running infrastructure businesses and closing complex energy transactions. AsВ the sole founder ofВ Marvel, inВ 2019, Katherine saw anВ opportunity toВ run aВ business her wayВ вЂ” leading with high integrity, unmatched focus onВ service quality and utmost commitment toВ driving customersвЂ™ yields.",
+            "section4_employee_history_header": "Career History",
+            "section4_employee_history": "history",
+            "section4_employee_education_header": "Education",
+            "section4_employee_education": "history"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HpQnpA",
+        "employee_kBmTxD",
+        "employee_JLrdm7"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "section1_zFAyCJ",
     "section2_NDKxUa",
-    "section3_JARwGa"
+    "section3_JARwGa",
+    "section4_EFnPxc"
   ]
 }
