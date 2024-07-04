@@ -192,11 +192,11 @@
           "settings": {
             "section4_employee_name": "Katherine Ryzhaya",
             "section4_employee_post": "Founder and CEO",
-            "section4_employee_text": "AВ serial entrepreneur and industry expert, Katherine has nearly 20 years ofВ experience inВ running infrastructure businesses and closing complex energy transactions. AsВ the sole founder ofВ Marvel, inВ 2019, Katherine saw anВ opportunity toВ run aВ business her wayВ вЂ” leading with high integrity, unmatched focus onВ service quality and utmost commitment toВ driving customersвЂ™ yields.",
+            "section4_employee_text": "A serial entrepreneur and industry expert, Katherine has nearly 20 years of experience in running infrastructure businesses and closing complex energy transactions. As the sole founder of Marvel, in 2019, Katherine saw an opportunity to run a business her way — leading with high integrity, unmatched focus on service quality and utmost commitment to driving customers’ yields.",
             "section4_employee_history_header": "Career History",
-            "section4_employee_history": "history",
+            "section4_employee_history": "<ul>\n                        <li>CEO, Renovar, <b>Shell Digital Ventures<\/b><\/li>\n                        <li>CCO, <b>Lightsource bp<\/b><\/li>\n                        <li>Co-Founder and CCO, <b>AMS (acquired by Fluence, NASDAQ: FLNC)<\/b><\/li>\n                        <li>VP and Director,<b> Evolution Markets<\/b><\/li>",
             "section4_employee_education_header": "Education",
-            "section4_employee_education": "history"
+            "section4_employee_education": "<ul>\n                        <li>BS, Finance, University of San Francisco<\/li>\n                        <li>MBA, Finance, Duke University<\/li>\n                      <\/ul>"
           }
         }
       },
