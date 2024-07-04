@@ -175,18 +175,6 @@
             "heading4": "Team"
           }
         },
-        "employee_kBmTxD": {
-          "type": "employee",
-          "settings": {
-            "section4_employee_name": "Katherine Ryzhaya",
-            "section4_employee_post": "Founder and CEO",
-            "section4_employee_text": "AВ serial entrepreneur and industry expert, Katherine has nearly 20 years ofВ experience inВ running infrastructure businesses and closing complex energy transactions. AsВ the sole founder ofВ Marvel, inВ 2019, Katherine saw anВ opportunity toВ run aВ business her wayВ вЂ” leading with high integrity, unmatched focus onВ service quality and utmost commitment toВ driving customersвЂ™ yields.",
-            "section4_employee_history_header": "Career History",
-            "section4_employee_history": "history",
-            "section4_employee_education_header": "Education",
-            "section4_employee_education": "history"
-          }
-        },
         "employee_JLrdm7": {
           "type": "employee",
           "settings": {
@@ -198,12 +186,25 @@
             "section4_employee_education_header": "Education",
             "section4_employee_education": "<ul>\n                        <li>BS, Finance, University of San Francisco<\/li>\n                        <li>MBA, Finance, Duke University<\/li>\n                      <\/ul>"
           }
+        },
+        "employee_iGnRFN": {
+          "type": "employee",
+          "settings": {
+            "section4_employee_meet": "shopify:\/\/shop_images\/Group_238.png",
+            "section4_employee_name": "Sam Peelle",
+            "section4_employee_post": "Senior Director and Partner",
+            "section4_employee_text": "Sam has over 10 years of experience in renewable power and gas markets, with expertise in renewable fuels, demand side management, energy procurement, energy storage and analytics. Throughout his career, Sam has worked on all sides of the transaction, in each case leading with integrity, customer service and a keen focus on delivering results that positively impact the client’s bottom line and environmental impact.",
+            "section4_employee_history_header": "Career History",
+            "section4_employee_history": "history",
+            "section4_employee_education_header": "Education",
+            "section4_employee_education": "history"
+          }
         }
       },
       "block_order": [
         "heading_HpQnpA",
-        "employee_kBmTxD",
-        "employee_JLrdm7"
+        "employee_JLrdm7",
+        "employee_iGnRFN"
       ],
       "settings": {
       }
