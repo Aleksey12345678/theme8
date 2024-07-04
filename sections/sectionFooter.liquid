@@ -89,7 +89,8 @@
                       >
                     </div>
                     <div class="sectionFooter_inputBlock__buttonDiv">
-                      {% render 'sendButton' %}
+                      {% assign buttonText = block.settings.buttonText %}
+                      {% render 'sendButton', buttonText: buttonText %}
                     </div>
                   </div>
                 {%- endform -%}
@@ -167,7 +168,14 @@
           "id":"inputBlockCompany",
           "default":"  COMPANY*",
           "label":"input company"
-        }
+        },
+         {
+          "type":"inline_richtext",
+          "id":"buttonText",
+          "default":" SEND",
+
+          "label":"Button text"
+      }
       ]
       }
    ] ,
