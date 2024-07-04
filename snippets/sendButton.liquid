@@ -1,10 +1,10 @@
 <button class="sectionFooter_inputBlock__button" type="submit">
   <div class="sectionFooter_inputBlock__button_inner buttonFont">
     <div class="sectionFooter_inputBlock__button_inner_text">
-      {% if settings.footerButtonText.size == 0 %}
+      {% if buttonText.size == 0 %}
         <p>SEND</p>
       {% else %}
-        <p>{{ settings.footerButtonText }}</p>
+        <p>{{ buttonText }}</p>
       {% endif %}
     </div>
     <div>
