@@ -209,12 +209,47 @@
       ],
       "settings": {
       }
+    },
+    "section5_bb4GDU": {
+      "type": "section5",
+      "blocks": {
+        "heading_UCxDp3": {
+          "type": "heading",
+          "settings": {
+            "heading5": "News"
+          }
+        },
+        "news_ANkpVb": {
+          "type": "news",
+          "settings": {
+            "section5_new_href": "Marvel  Celebrates Anniversary, $1B inВ Closed Transactions",
+            "section5_new_date": "July 13, 2021"
+          }
+        },
+        "news_YEwhbi": {
+          "type": "news",
+          "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/915_1.png",
+            "section5_new_logoimg": "shopify:\/\/shop_images\/logo-updated_2x_1.png",
+            "section5_new_href": "TRC and Marvel Announce RNG Development Support Partnership",
+            "section5_new_date": "July 13, 2021"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UCxDp3",
+        "news_ANkpVb",
+        "news_YEwhbi"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "section1_zFAyCJ",
     "section2_NDKxUa",
     "section3_JARwGa",
-    "section4_EFnPxc"
+    "section4_EFnPxc",
+    "section5_bb4GDU"
   ]
 }
