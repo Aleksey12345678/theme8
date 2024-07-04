@@ -1,6 +1,256 @@
+{{ 'section4Css.css' | asset_url | stylesheet_tag }}
+{{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
+<div class="section">
+  <div class="section__container">
+    <div class="section__inner">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'heading' %}
+            <div class="section__titleDiv">
+              {% if block.settings.heading4.size == 0 %}
+                <h1 class="H2Font">Team</h1>
+              {% else %}
+                <h1 class="H2Font">{{ block.settings.heading4 }}</h1>
+              {% endif %}
+
+              <div class="section__line"><span> </span></div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+      <div class="section4__employeeList">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'employee' %}
+              <div class="section4__employee">
+                <div class="section4__employee_topBlock">
+                  <div class="section4__employee_topBlock_innerLeftBlock">
+                    <div class="section4__employee_meetLink">
+                      {% if block.settings.section4_employee_meet == blank %}
+                        <div class="section4__employee_meet_img"><img src="{{ 'Group237.png'| asset_url }}"></div>
+                      {% else %}
+                        <div class="section4__employee_meet_img">
+                          <img src="{{ block.settings.section4_employee_meet| img_url: "master"}}">
+                        </div>
+                      {% endif %}
+                    </div>
+                    <div class="section4__employee_name H3Font">
+                      {% if block.settings.section4_employee_name.size == 0 %}
+                        <p>Katherine Ryzhaya</p>
+                      {% else %}
+                        <p>{{ block.settings.section4_employee_name }}</p>
+                      {% endif %}
+                    </div>
+                    <div class="section4__employee_post body3Font ">
+                      {% if block.settings.section4_employee_post.size == 0 %}
+                        <p>Foundr and CEO</p>
+                      {% else %}
+                        <p>{{ block.settings.section4_employee_post }}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div class="section4__employee_photo">
+                    {% if block.settings.section4_employee_photo == blank %}
+                      <div class="section4__employee_photo_img"><img src="{{ 'Group 264.png'| asset_url }}"></div>
+                    {% else %}
+                      <div class="section4__employee_photo_img">
+                        <img src="{{ block.settings.section4_employee_photo| img_url: "master"}}">
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="section4__employee_bottomBlock">
+                  <div class="section4__employee_text body2Font ">
+                    {% if block.settings.section4_employee_text.size == 0 %}
+                      <p>
+                        A serial entrepreneur and industry expert, Katherine has nearly 20 years of experience in
+                        running infrastructure businesses and closing complex energy transactions. As the sole founder
+                        of Marvel, in 2019, Katherine saw an opportunity to run a business her way вЂ” leading with high
+                        integrity, unmatched focus on service quality and utmost commitment to driving customersвЂ™
+                        yields.
+                      </p>
+                    {% else %}
+                      <p>{{ block.settings.section4_employee_text }}</p>
+                    {% endif %}
+                  </div>
+                  <div class="section4__employee_header H4Font">
+                    {% if block.settings.section4_employee_post.size == 0 %}
+                      <p>Career History</p>
+                    {% else %}
+                      <p>{{ block.settings.section4_employee_history_header }}</p>
+                    {% endif %}
+                  </div>
+                  <div class="section4__employee_ul body3Font">
+                    {% if block.settings.section4_employee_post.size == 0 %}
+                      <ul>
+                        <li>CEO, Renovar, <b>Shell Digital Ventures</b></li>
+                        <li>CCO, <b>Lightsource bp</b></li>
+                        <li>Co-Founder and CCO, <b>AMS (acquired by Fluence, NASDAQ: FLNC)</b></li>
+                        <li>VP and Director,<b> Evolution Markets</b></li>
+                        <li>Principal,<b> Pacific Gas and Electric Company</b></li>
+                      </ul>
+                    {% else %}
+                      <p>{{ block.settings.section4_employee_history }}</p>
+                    {% endif %}
+                  </div>
+
+                  <div class="section4__employee_header H4Font">
+                    {% if block.settings.section4_employee_education_header.size == 0 %}
+                      <p>Education</p>
+                    {% else %}
+                      <p>{{ block.settings.section4_employee_education_header }}</p>
+                    {% endif %}
+                  </div>
+                  <div class="section4__employee_ul body3Font">
+                    {% if block.settings.section4_employee_education.size == 0 %}
+                      <ul>
+                        <li>BS, Finance, University of San Francisco</li>
+                        <li>MBA, Finance, Duke University</li>
+                      </ul>
+                    {% else %}
+                      <p>{{ block.settings.section4_employee_education }}</p>
+                    {% endif %}
+                  </div>
+                  <div class="section4__employee_contacts">
+                    {% if block.settings.section4_employee_in == blank %}
+                      <div class="section4__employee_contacts_img"><img src="{{ 'Vector.png'| asset_url }}"></div>
+                    {% else %}
+                      <div class="section4__employee_contacts_img">
+                        <img src="{{ block.settings.section4_employee_in| img_url: "master"}}">
+                      </div>
+                    {% endif %}
+                    {% if block.settings.section4_employee_mail == blank %}
+                      <div class="section4__employee_contacts_img"><img src="{{ 'Icons _ Mail.png'| asset_url }}"></div>
+                    {% else %}
+                      <div class="section4__employee_contacts_img">
+                        <img src="{{ block.settings.section4_employee_mail| img_url: "master"}}">
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .section4__employee_ul ul{
+        list-style-image: url("{{ 'Rectangle 373.svg' | asset_url }}");
+   text-align: left;
+   list-style-position: inside;
+    line-height: 2em;
+   }
+</style>
+
 {% schema %}
+{
+  "name": "section4",
+  "settings": [],
+   "blocks":[
+   {
+     "type":"heading",
+    "name":"Title-section4",
+    "limit":1,
+    "settings":[
+      {
+       "type":"inline_richtext",
+        "id":"heading4",
+        "default":"Team",
+        "label":"Title"
+      }
+    ]
+   },
+       {
+      "type":"employee",
+      "name":"employee-section4",
+      "limit":10,
+      "settings":[
+         {
+          "type":"image_picker",
+          "id":"section4_employee_meet",
+
+          "label":"meet img"
+        },
+
+        {
+          "type":"inline_richtext",
+          "id":"section4_employee_name",
+          "default":"Katherine Ryzhaya",
+          "label":"Name"
+        },
+         {
+          "type":"inline_richtext",
+          "id":"section4_employee_post",
+          "default":"Founder and CEO",
+          "label":"Post"
+        },
+        {
+          "type":"inline_richtext",
+          "id":"section4_employee_text",
+          "default":"AВ serial entrepreneur and industry expert, Katherine has nearly 20 years ofВ experience inВ running infrastructure businesses and closing complex energy transactions. AsВ the sole founder ofВ Marvel, inВ 2019, Katherine saw anВ opportunity toВ run aВ business her wayВ вЂ” leading with high integrity, unmatched focus onВ service quality and utmost commitment toВ driving customersвЂ™ yields.",
+          "label":"Text"
+        },
+       {
+          "type":"image_picker",
+          "id":"section4_employee_photo",
+          "label":"Photo"
+        },
+        {
+          "type":"inline_richtext",
+          "id":"section4_employee_history_header",
+          "default":"Career History",
+          "label":"Header"
+        },
+         {
+          "type":"liquid",
+          "id":"section4_employee_history",
+          "default":"history",
+          "label":"Career history"
+        },
+        {
+          "type":"inline_richtext",
+          "id":"section4_employee_education_header",
+          "default":"Education",
+          "label":"Education header"
+        },
+         {
+          "type":"liquid",
+          "id":"section4_employee_education",
+          "default":"history",
+          "label":"Education text"
+        },
+   {
+          "type":"image_picker",
+          "id":"section4_employee_in",
+
+          "label":"IN image"
+        },
+        {
+          "type":"image_picker",
+          "id":"section4_employee_mail",
+
+          "label":"Mail image"
+        }
+
+      ]
+
+    }
+       ],
+  "presets":[
   {
-    "name": "Section name",
-    "settings": []
+    "name":"section4",
+    "blocks": [
+        {
+          "type": "heading"
+        },
+      {
+        "type":"employee"
+      }
+
+      ]
+
   }
+]
+}
 {% endschema %}
