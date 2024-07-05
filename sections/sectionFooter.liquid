@@ -1,7 +1,7 @@
 {{ 'sectionFooterCss.css' | asset_url | stylesheet_tag }}
 {{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
 <div class="section">
-  <div class="section__container sectionFooter__container">
+  <div id="contacts" class="section__container sectionFooter__container">
     <div class="section__inner">
       {% for block in section.blocks %}
         {% case block.type %}
