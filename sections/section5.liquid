@@ -119,7 +119,8 @@
 
         // Attach listener function on state changes
         x.addEventListener("change", function() {
-  location. reload();
+  // location. reload();
+          $("#news").load(location.href + " #news");
           myFunction(x);
         });
 </script>
