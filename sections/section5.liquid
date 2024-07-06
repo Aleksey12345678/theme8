@@ -3,7 +3,7 @@
 {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
 
 <div id="news" class="section">
-  <div id="shopify-section-[section-id]" class="section__container">
+  <div class="section__container">
     <div class="section__inner">
       {% for block in section.blocks %}
         {% case block.type %}
@@ -86,8 +86,11 @@
 {{ 'jquery-migrate-1.2.1.min.js' | asset_url | script_tag }}
 {{ 'slick.min.js' | asset_url | script_tag }}
 <script>
+
   console.log("////////////////////////////////////");
-  console.log("shopify-section-[section-id]");
+  fetch(window.Shopify.routes.root + "?sections={section-id}")
+  .then(res =>  console.log(res); )
+
         function myFunction(x) {
           if (x.matches) { // If media query matches
 
