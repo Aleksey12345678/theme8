@@ -86,39 +86,26 @@
 {{ 'jquery-migrate-1.2.1.min.js' | asset_url | script_tag }}
 {{ 'slick.min.js' | asset_url | script_tag }}
 <script>
-          function myFunction(x) {
+  function myFunction(x) {
 
 
-               $('.section5__news').not('.slick-initialized').slick({
-                 initialSlide:0,
-               slidesToShow: 3,
-               slidesToScroll: 1,
-               autoplay: true,
-               autoplaySpeed: 2000,
-                  responsive: [
-    {
-      breakpoint: 850,
-      settings: {
-        slidesToShow: 1
-      }
-    }]
-             });
+       $('.section5__news').not('.slick-initialized').slick({
+         initialSlide:0,
+       slidesToShow: 3,
+       slidesToScroll: 1,
+       autoplay: true,
+       autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 850,
+              settings: {
+                slidesToShow: 1
+              }
+            }]
+                     });
+  }
 
-
-          }
-
-          // Create a MediaQueryList object
-          var x = window.matchMedia("(max-width: 850px)")
-
-          // Call listener function at run time
-          myFunction(x);
-
-          // Attach listener function on state changes
-          x.addEventListener("change", function() {
-  //  location. reload();
-            // $("#news").load(location.href + " #news");
-            myFunction(x);
-          });
+  myFunction(x);
 </script>
 
 {% schema %}
