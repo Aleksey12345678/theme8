@@ -13,6 +13,7 @@
       "sectionHeader": {
         "type": "sectionHeader",
         "settings": {
+          "sectionHeader_logo": "shopify:\/\/shop_images\/Group_1.png",
           "padding": 24,
           "logo_width": 100,
           "navigation": "main-menu",
@@ -41,7 +42,8 @@
               "inputBlockText": "Stay in the loop by getting on our mailing list",
               "inputBlockName": "NAME*",
               "inputBlockEmail": "EMAIL*",
-              "inputBlockCompany": "COMPANY*"
+              "inputBlockCompany": "COMPANY*",
+              "buttonText": "SEND"
             }
           }
         },
