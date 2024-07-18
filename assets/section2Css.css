@@ -1,10 +1,10 @@
 
 /* 
-
+.section2__line{
  
   height:48px;
  }
-} */
+ */
 .section2__missionDesc{
   display: flex;
   flex-direction: column;
