@@ -13,7 +13,7 @@ flex-direction:row;
 .section2__image{   
   width:100%;
    @media(min-width: 750px){  
-  margin-top:56px
+  margin-top:56px;
    width: 100%;
   max-width:486px;
   height:315px;
