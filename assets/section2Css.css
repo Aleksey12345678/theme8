@@ -1,15 +1,6 @@
 
 /* 
-.section2__line{
-  border-bottom: 4px solid #F9D023;
-  width: 65px;
-  height:32px; 
- @media(min-width: 750px){  
-  display:block;
-  border-bottom: 6px solid #F9D023;
-  width: 100px;
-  height:48px;
- }
+
 } */
 .section2__missionDesc{
   display: flex;
