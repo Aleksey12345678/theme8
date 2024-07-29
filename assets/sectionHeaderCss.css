@@ -47,14 +47,7 @@
      height:55px;
 }}
 
-.logo_svg{
-   width:100px;
-    height:37px;
-     @media(min-width: 750px){ 
-     width:145.48px;
-     height:55px;
-}
-}
+
 
 .sectionHeader-hb{
   margin-top: 34px;
