@@ -2,6 +2,16 @@
 {{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
 <div id="mission" class="section">
   <div class="section__container">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'imageNav' %}
+          {% if block.settings['imageNav-section2'] == blank %}
+            <div class="imageNav"><img src="{{ 'Group 244.png'| asset_url }}"></div>
+          {% else %}
+            <div class="imageNav"><img src="{{ block.settings.imageNav-section2| img_url: "master"}}"></div>
+          {% endif %}
+      {% endcase %}
+    {% endfor %}
     <div class="section__inner">
       {% for block in section.blocks %}
         {% case block.type %}
@@ -149,6 +159,18 @@
         }
       ]
 
+    },
+    {
+      "type":"imageNav",
+      "name":"ImageNav-section2",
+      "limit":1,
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"imageNav-section2",
+          "label":"ImageNav"
+        }
+      ]
     }
 
   ],
@@ -167,7 +189,10 @@
         },
           {
             "type":"list"
-          }
+          },
+          {
+          "type": "imageNav"
+        }
 
 
       ]
