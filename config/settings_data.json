@@ -13,7 +13,6 @@
       "sectionHeader": {
         "type": "sectionHeader",
         "settings": {
-          "sectionHeader_logo": "shopify:\/\/shop_images\/Group_1.png",
           "padding": 0,
           "navigation": "main-menu",
           "buttonText": "CONTACT US"
@@ -44,12 +43,18 @@
               "inputBlockCompany": "COMPANY*",
               "buttonText": "SEND"
             }
+          },
+          "image_nav_TETWRF": {
+            "type": "imageNav",
+            "settings": {
+            }
           }
         },
         "block_order": [
           "heading_Pm7iCD",
           "textblock_LQGrre",
-          "inputblock_pWdtWH"
+          "inputblock_pWdtWH",
+          "image_nav_TETWRF"
         ],
         "settings": {
         }

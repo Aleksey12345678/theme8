@@ -99,6 +99,11 @@
             "imglist-hader": "100%",
             "imglist-text": "independent and unbiased advice"
           }
+        },
+        "image_nav_NCdBCw": {
+          "type": "imageNav",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -109,7 +114,8 @@
         "list_fUyGCp",
         "list_qxXzyj",
         "list_8nhE86",
-        "list_iawgJB"
+        "list_iawgJB",
+        "image_nav_NCdBCw"
       ],
       "settings": {
       }
@@ -155,6 +161,11 @@
             "serviceItem-header": "Market Development",
             "serviceItem-text": "<ul>\n<li>New venture strategy<\/li>\n<li>Go-to-market architecture<\/li>\n<li>M&A support<\/li>\n<li>Marketing and partnerships<\/li>\n<\/ul>"
           }
+        },
+        "image_nav_BgiUVL": {
+          "type": "imageNav",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -163,7 +174,8 @@
         "list_CwhyeY",
         "text2_9zqQ83",
         "list_MkrDfw",
-        "list_fPrLHR"
+        "list_fPrLHR",
+        "image_nav_BgiUVL"
       ],
       "settings": {
       }
@@ -200,12 +212,18 @@
             "section4_employee_education_header": "Education",
             "section4_employee_education": "<ul>\n<li>BA, Political Science, University of Pennsylvania<\/li>\n<li>MBA, Finance, Babson College<\/li>\n<\/ul>"
           }
+        },
+        "image_nav_xb8PPU": {
+          "type": "imageNav",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "heading_HpQnpA",
         "employee_JLrdm7",
-        "employee_iGnRFN"
+        "employee_iGnRFN",
+        "image_nav_xb8PPU"
       ],
       "settings": {
       }
@@ -246,6 +264,11 @@
             "section5_new_href": "Marvel Turns 3, Expands Biomethane Services to Canada and Europe",
             "section5_new_date": "July 06, 2022"
           }
+        },
+        "image_nav_LAeM6k": {
+          "type": "imageNav",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -253,7 +276,8 @@
         "news_ANkpVb",
         "news_YEwhbi",
         "news_xgCaXk",
-        "news_f3XXTN"
+        "news_f3XXTN",
+        "image_nav_LAeM6k"
       ],
       "settings": {
       }
