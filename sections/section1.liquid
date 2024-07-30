@@ -23,20 +23,6 @@
                 <h1 class="firstSection__title H1Font">{{ block.settings.heading }}</h1>
               {% endif %}
             </div>
-          {% when 'text' %}
-            {% if block.settings.text.size == 0 %}
-              <p class="firstSection__text body1Font">
-                Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer
-                services to clients in power, gas, water, industrial and transportation sectors.
-              </p>
-            {% else %}
-              <p class="firstSection__text body1Font">{{ block.settings.text }}</p>
-            {% endif %}
-          {% when 'button' %}
-            <div class="firstSection__btn">
-              {% assign buttonText = block.settings.buttonText %}
-              {% render 'contactButton', buttonText: buttonText %}
-            </div>
           {% when 'blockNav' %}
             <div class="firstSection_blockNav">
               {% if block.settings['blocNav-section1'] == blank %}
@@ -53,6 +39,20 @@
                   <p class="firstSection__blockNavText body3Font">{{ block.settings['blockNav-section1-text'] }}</p>
                 {% endif %}
               </div>
+            </div>
+          {% when 'text' %}
+            {% if block.settings.text.size == 0 %}
+              <p class="firstSection__text body1Font">
+                Marvel Power Group is a woman-owned, ESG-focused transaction broker and commercial advisor. We offer
+                services to clients in power, gas, water, industrial and transportation sectors.
+              </p>
+            {% else %}
+              <p class="firstSection__text body1Font">{{ block.settings.text }}</p>
+            {% endif %}
+          {% when 'button' %}
+            <div class="firstSection__btn">
+              {% assign buttonText = block.settings.buttonText %}
+              {% render 'contactButton', buttonText: buttonText %}
             </div>
         {% endcase %}
       {% endfor %}
