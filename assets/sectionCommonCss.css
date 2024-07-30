@@ -53,6 +53,7 @@ a{
 
  .section__container{
   display: flex;
+  position: relative;
   justify-content: center;
   max-width:1640px;
   width:100%; 
