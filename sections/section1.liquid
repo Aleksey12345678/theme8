@@ -27,7 +27,7 @@
               {% assign buttonText = block.settings.buttonText %}
               {% render 'contactButton', buttonText: buttonText %}
             </div>
-          {% when 'image' %}
+          {% when 'imageNav' %}
             {% if block.settings['imageNav-section1'] == blank %}
               <div class="imageNav"><img src="{{ 'Group 245.png'| asset_url }}"></div>
             {% else %}
