@@ -27,6 +27,12 @@
               {% assign buttonText = block.settings.buttonText %}
               {% render 'contactButton', buttonText: buttonText %}
             </div>
+          {% when 'image' %}
+            {% if block.settings['imageNav-section1'] == blank %}
+              <div class="section1__imageNav"><img src="{{ 'Group 245.png'| asset_url }}"></div>
+            {% else %}
+              <div class="section2__imageNav"><img src="{{ block.settings.imageNav-section1| img_url: "master"}}"></div>
+            {% endif %}
         {% endcase %}
       {% endfor %}
     </div>
@@ -95,7 +101,19 @@
           "label":"Button text"
       }
         ]
-    }
+    },
+    {
+      "type":"imageNav",
+      "name":"ImageNav-section1",
+      "limit":1,
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"imageNav-section1",
+          "label":"ImageNav"
+        }
+      ]
+    },
   ],
   "presets":[
     {
@@ -109,6 +127,9 @@
         },
         {
           "type": "button"
+        },
+          {
+          "type": "imageNav"
         }
       ]
     }
