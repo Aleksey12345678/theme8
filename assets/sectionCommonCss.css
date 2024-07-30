@@ -95,6 +95,8 @@ margin-bottom:56px;
 
 .imageNav{
   position: absolute;
+  width: 108px;
+  height: 209px;
   top: 50%;
   right: 0%;
    z-index:2;
