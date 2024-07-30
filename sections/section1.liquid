@@ -37,6 +37,23 @@
               {% assign buttonText = block.settings.buttonText %}
               {% render 'contactButton', buttonText: buttonText %}
             </div>
+          {% when 'blockNav' %}
+            <div class="firstSection_blockNav">
+              {% if block.settings['blocNav-section1'] == blank %}
+                <div class="firstSection_blockNav_img"><img src="{{ 'Rectangle 173.png'| asset_url }}"></div>
+              {% else %}
+                <div class="firstSection_blockNav_img">
+                  <img src="{{ block.settings.blockNav-section1| img_url: "master"}}">
+                </div>
+              {% endif %}
+              <div class="firstSection__blockNav_textDiv">
+                {% if block.settings.heading.size == 0 %}
+                  <p class="firstSection__blockNavText H1Font">Scroll for more</p>
+                {% else %}
+                  <p class="firstSection__blockNavText H1Font">{{ block.settings['blockNav-section1-text'] }}</p>
+                {% endif %}
+              </div>
+            </div>
         {% endcase %}
       {% endfor %}
     </div>
@@ -130,7 +147,7 @@
         },
         {
           "type":"inline_richtext",
-          "id":"blockNav-section1",
+          "id":"blockNav-section1-text",
           "default":"Scroll for more",
           "label":"blockNavText"
         }
