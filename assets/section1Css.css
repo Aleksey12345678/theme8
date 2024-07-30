@@ -82,5 +82,5 @@ bottom:54px;
 }
 
 .firstSection__blockNavText{
-  color: white;
+  color: white !important;
 }
