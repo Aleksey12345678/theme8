@@ -34,13 +34,20 @@
           "type": "imageNav",
           "settings": {
           }
+        },
+        "block_nav_hLhTEH": {
+          "type": "blockNav",
+          "settings": {
+            "blockNav-section1-text": "Scroll for more"
+          }
         }
       },
       "block_order": [
         "heading_nthQwi",
         "text_cw6LL6",
         "button_bdRwik",
-        "image_nav_7WLzQm"
+        "image_nav_7WLzQm",
+        "block_nav_hLhTEH"
       ],
       "settings": {
       }

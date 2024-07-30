@@ -61,6 +61,7 @@ a{
 
 .section__inner{
   display:flex;
+  position: relative;
   flex-direction: column;
   width: 100%;
   max-width: 1174px; 
