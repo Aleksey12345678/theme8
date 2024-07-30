@@ -102,6 +102,11 @@ margin-bottom:56px;
    z-index:2;
 }
 
+.imageNav img{
+  width: 108px;
+  height: 209px; 
+}
+
 .H1Font{
   color: rgb(255, 255, 255);
 font-family: Alata;
