@@ -17,14 +17,14 @@
         <span class="sectionHeader-hb-bar"></span>
       </button>
       <div class="sectionHeader__desktopNav desktopMenuItems">
-        {% render 'sectionHeaderButtonImg' %}
+        {% render 'headerUl' %}
       </div>
 
       <div class="sectionHeader__mobileNav">
         <div class="sectionHeader__mobileNav_header">
           {% if section.settings.sectionHeader_mobilLogo == blank %}
             <div class="sectionHeader__mobileNav_header__logo">
-              {% render 'headerUl' %}
+              {% render 'sectionHeaderButtonImg' %}
             </div>
           {% else %}
             <div class="sectionHeader__mobileNav_header__logo">
