@@ -14,8 +14,7 @@
         "type": "sectionHeader",
         "settings": {
           "padding": 0,
-          "navigation": "main-menu",
-          "buttonText": "CONTACT US"
+          "navigation": "main-menu"
         }
       },
       "sectionFooter": {
