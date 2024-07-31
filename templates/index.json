@@ -27,7 +27,7 @@
         "button_bdRwik": {
           "type": "button",
           "settings": {
-            "buttonText": "CONTACT US"
+            "buttonText": "CONTACT U"
           }
         },
         "image_nav_7WLzQm": {
@@ -38,7 +38,7 @@
         "block_nav_hLhTEH": {
           "type": "blockNav",
           "settings": {
-            "blockNav-section1-text": "Scroll for more"
+            "text_nav": "Scroll for more"
           }
         }
       },
