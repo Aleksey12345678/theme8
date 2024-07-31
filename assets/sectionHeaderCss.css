@@ -146,6 +146,12 @@
   height:38px;
   margin-left:15px; 
 }
+
+  .sectionHeader__mobileNav_header__logo img{
+    width:100px;
+  height:38px;
+  }
+  
 .sectionHeader__mobileNav_header__closeImg{
   position: absolute;
   width: 19px;
