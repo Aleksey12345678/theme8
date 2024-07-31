@@ -24,7 +24,7 @@
         <div class="sectionHeader__mobileNav_header">
           {% if section.settings.sectionHeader_mobilLogo == blank %}
             <div class="sectionHeader__mobileNav_header__logo">
-              {% render 'sectionHeaderButtonImg' %}
+              {% render 'sectionHeaderLogoImg' %}
             </div>
           {% else %}
             <div class="sectionHeader__mobileNav_header__logo">
@@ -32,21 +32,7 @@
             </div>
           {% endif %}
           <div class="sectionHeader__mobileNav_header__closeImg">
-            <svg
-              width="19.000000"
-              height="19.000000"
-              viewBox="0 0 19 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <desc>
-              		Created with Pixso.
-              </desc>
-              <defs/>
-              <rect id="Rectangle 79" y="17.592529" width="24.879627" height="1.990370" transform="rotate(-45.0001 0.000000 17.592529)" fill="#FFFFFF" fill-opacity="1.000000"/>
-              <rect id="Rectangle 367" width="24.879627" height="1.990370" transform="matrix(-0.707105 -0.707108 -0.707105 0.707108 19 17.5925)" fill="#FFFFFF" fill-opacity="1.000000"/>
-            </svg>
+            {% render 'sectionHeaderCloseBtnImg' %}
           </div>
         </div>
         <div class="sectionHeader__mobileNav_header__nav">
