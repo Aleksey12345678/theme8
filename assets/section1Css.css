@@ -81,11 +81,22 @@ bottom:54px;
     }
 }
 
-.firstSection__blockNavText{
-  color: white !important;
+.firstSection_blockNav_img{
+  width: 90px;
+  height: 101px;
+}
+
+.firstSection_blockNav_img img{
+  width: 90px;
+  height: 101px;
 }
 
 .firstSection__blockNav_textDiv{
-  margin-top: 22px;
-  left:-50%;
+     position: relative;
+    margin-top: 22px;
+    left: -50%;
+}
+
+.firstSection__blockNavText{
+  color: white !important;
 }
