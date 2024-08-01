@@ -34,24 +34,23 @@
               <div class="section4__employee">
                 <div class="section4__employee_topBlock">
                   <div class="section4__employee_topBlock_innerLeftBlock">
-                    <a href="{{block.settings.section4.section4_meet_link}}">
-                      <div class="section4__employee_meetLink">
-                        <div class="section4__employee_meetLink_text">
-                          {% if block.settings.section4.section4_meet_text.size == 0 %}
-                            <p class="body3FontBold">Meet Katherina</p>
-                          {% else %}
-                            <p class="body3FontBold">{{ block.settings.section4.section4_meet_text }}</p>
-                          {% endif %}
-                        </div>
-                        {% if block.settings.section4_employee_meet == blank %}
-                          <div class="section4__employee_meet_img"><img src="{{ 'Group237.png'| asset_url }}"></div>
+                    <div class="section4__employee_meetLink">
+                      <div class="section4__employee_meetLink_text">
+                        {% if block.settings.section4.section4_meet_text.size == 0 %}
+                          <p class="body3FontBold">Meet Katherina</p>
                         {% else %}
-                          <div class="section4__employee_meet_img">
-                            <img src="{{ block.settings.section4_employee_meet| img_url: "master"}}">
-                          </div>
+                          <p class="body3FontBold">{{ block.settings.section4.section4_meet_text }}</p>
                         {% endif %}
                       </div>
-                    </a>
+                      {% if block.settings.section4_employee_meet == blank %}
+                        <div class="section4__employee_meet_img"><img src="{{ 'Group237.png'| asset_url }}"></div>
+                      {% else %}
+                        <div class="section4__employee_meet_img">
+                          <img src="{{ block.settings.section4_employee_meet| img_url: "master"}}">
+                        </div>
+                      {% endif %}
+                    </div>
+
                     <div class="section4__employee_name H3Font">
                       {% if block.settings.section4_employee_name.size == 0 %}
                         <p>Katherine Ryzhaya</p>
