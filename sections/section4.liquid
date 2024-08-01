@@ -128,13 +128,17 @@
                         <img src="{{ block.settings.section4_employee_in| img_url: "master"}}">
                       </div>
                     {% endif %}
-                    {% if block.settings.section4_employee_mail == blank %}
-                      <div class="section4__employee_contacts_img"><img src="{{ 'Icons _ Mail.png'| asset_url }}"></div>
-                    {% else %}
-                      <div class="section4__employee_contacts_img">
-                        <img src="{{ block.settings.section4_employee_mail| img_url: "master"}}">
-                      </div>
-                    {% endif %}
+                    <a href="{{block.settings.mail_link }}">
+                      {% if block.settings.section4_employee_mail == blank %}
+                        <div class="section4__employee_contacts_img">
+                          <img src="{{ 'Icons _ Mail.png'| asset_url }}">
+                        </div>
+                      {% else %}
+                        <div class="section4__employee_contacts_img">
+                          <img src="{{ block.settings.section4_employee_mail| img_url: "master"}}">
+                        </div>
+                      {% endif %}
+                    </a>
                   </div>
                 </div>
               </div>
