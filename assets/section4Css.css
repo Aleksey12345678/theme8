@@ -130,13 +130,6 @@ background: rgb(255, 255, 255);
  }
 }
 
-.section4__employee_text{
-margin-top:32px;
-
-   @media(min-width: 750px){ 
-  margin-top: 40px;
- }
-}
 
 
 .section4__employee_header{
