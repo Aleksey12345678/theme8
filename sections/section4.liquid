@@ -35,6 +35,12 @@
                 <div class="section4__employee_topBlock">
                   <div class="section4__employee_topBlock_innerLeftBlock">
                     <div class="section4__employee_meetLink">
+                      {% if block.settings.section4_meet_text.size == 0 %}
+                        <p class="body3FontBold">Meet Katherina</p>
+                      {% else %}
+                        <p>{{ block.settings.section4_meet_text }}</p>
+                      {% endif %}
+
                       {% if block.settings.section4_employee_meet == blank %}
                         <div class="section4__employee_meet_img"><img src="{{ 'Group237.png'| asset_url }}"></div>
                       {% else %}
