@@ -120,14 +120,17 @@
                       <p>{{ block.settings.section4_employee_education }}</p>
                     {% endif %}
                   </div>
+
                   <div class="section4__employee_contacts">
-                    {% if block.settings.section4_employee_in == blank %}
-                      <div class="section4__employee_contacts_img"><img src="{{ 'Vector.png'| asset_url }}"></div>
-                    {% else %}
-                      <div class="section4__employee_contacts_img">
-                        <img src="{{ block.settings.section4_employee_in| img_url: "master"}}">
-                      </div>
-                    {% endif %}
+                    <a href="{{block.settings.in_link }}">
+                      {% if block.settings.section4_employee_in == blank %}
+                        <div class="section4__employee_contacts_img"><img src="{{ 'Vector.png'| asset_url }}"></div>
+                      {% else %}
+                        <div class="section4__employee_contacts_img">
+                          <img src="{{ block.settings.section4_employee_in| img_url: "master"}}">
+                        </div>
+                      {% endif %}
+                    </a>
                     <a href="{{block.settings.mail_link }}">
                       {% if block.settings.section4_employee_mail == blank %}
                         <div class="section4__employee_contacts_img">
@@ -250,6 +253,11 @@
   "type": "url",
   "id": "mail_link",
   "label": "mail link"
+},
+        {
+  "type": "url",
+  "id": "in_link",
+  "label": "in link"
 }
 
       ]
