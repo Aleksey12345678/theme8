@@ -35,10 +35,10 @@
                 <div class="section4__employee_topBlock">
                   <div class="section4__employee_topBlock_innerLeftBlock">
                     <div class="section4__employee_meetLink">
-                      {% if block.settings.section4_meet_text.size == 0 %}
+                      {% if block.settings.section4.section4_meet_text.size == 0 %}
                         <p class="body3FontBold">Meet Katherina</p>
                       {% else %}
-                        <p>{{ block.settings.section4_meet_text }}</p>
+                        <p class="body3FontBold">{{ block.settings.section4.section4_meet_text }}</p>
                       {% endif %}
 
                       {% if block.settings.section4_employee_meet == blank %}
@@ -189,6 +189,13 @@
       "name":"employee-section4",
       "limit":10,
       "settings":[
+
+         {
+          "type":"inline_richtext",
+          "id":"section4_meet_text",
+          "default":"Meet Katherina",
+          "label":"Link text"
+        },
          {
           "type":"image_picker",
           "id":"section4_employee_meet",
