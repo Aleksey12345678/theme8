@@ -33,53 +33,55 @@
           {% case block.type %}
             {% when 'news' %}
               <div class="section5__new">
-                <div class="section5__new_img1">
-                  {% if block.settings.section5_new_img == blank %}
-                    <div class="section5__new_img_div">
-                      <img src="{{ 'denys-nevozhai-dHNF-iBfbrA-unsplash.png'| asset_url }}">
-                    </div>
-                  {% else %}
-                    <div class="section5__new_img_div">
-                      <img src="{{ block.settings.section5_new_img| img_url: "master"}}">
-                    </div>
-                  {% endif %}
-                </div>
-                <div class="section5__new_description">
-                  <div class="section5__new_logoimg_div">
-                    {% if block.settings.section5_new_logoimg == blank %}
-                      <img src="{{ 'Group 239.png'| asset_url }}">
+                <a href="{{  block.settings.section5.section5_new_link }}">
+                  <div class="section5__new_img1">
+                    {% if block.settings.section5_new_img == blank %}
+                      <div class="section5__new_img_div">
+                        <img src="{{ 'denys-nevozhai-dHNF-iBfbrA-unsplash.png'| asset_url }}">
+                      </div>
                     {% else %}
-                      <img src="{{ block.settings.section5_new_logoimg| img_url: "master"}}">
+                      <div class="section5__new_img_div">
+                        <img src="{{ block.settings.section5_new_img| img_url: "master"}}">
+                      </div>
                     {% endif %}
                   </div>
-                  <div class="section5__new_link H4Font">
-                    {% if block.settings.section5_new_href.size == 0 %}
-                      <a href="#">
-                        <p>Marvel Celebrates Anniversary, $1B in Closed Transaction</p>
-                      </a>
-                    {% else %}
-                      <a href="#">
-                        <p>{{ block.settings.section5_new_href }}</p>
-                      </a>
-                    {% endif %}
-                  </div>
-                  <div class="section5__new_bottomdiv">
-                    <div class="section5__new_bottomdiv_date body3Font">
-                      {% if block.settings.section5_new_date == 0 %}
-                        <p>July 13, 2021</p>
+                  <div class="section5__new_description">
+                    <div class="section5__new_logoimg_div">
+                      {% if block.settings.section5_new_logoimg == blank %}
+                        <img src="{{ 'Group 239.png'| asset_url }}">
                       {% else %}
-                        <p>{{ block.settings.section5_new_date }}</p>
+                        <img src="{{ block.settings.section5_new_logoimg| img_url: "master"}}">
                       {% endif %}
                     </div>
-                    <div class="section5__new_bottomdiv_img">
-                      {% if block.settingssection5_new_bottomimg == blank %}
-                        <img src="{{ 'Group 211.png'| asset_url }}">
+                    <div class="section5__new_link H4Font">
+                      {% if block.settings.section5_new_href.size == 0 %}
+                        <a href="#">
+                          <p>Marvel Celebrates Anniversary, $1B in Closed Transaction</p>
+                        </a>
                       {% else %}
-                        <img src="{{ block.settings.section5_new_bottomimg| img_url: "master"}}">
+                        <a href="#">
+                          <p>{{ block.settings.section5_new_href }}</p>
+                        </a>
                       {% endif %}
                     </div>
+                    <div class="section5__new_bottomdiv">
+                      <div class="section5__new_bottomdiv_date body3Font">
+                        {% if block.settings.section5_new_date == 0 %}
+                          <p>July 13, 2021</p>
+                        {% else %}
+                          <p>{{ block.settings.section5_new_date }}</p>
+                        {% endif %}
+                      </div>
+                      <div class="section5__new_bottomdiv_img">
+                        {% if block.settingssection5_new_bottomimg == blank %}
+                          <img src="{{ 'Group 211.png'| asset_url }}">
+                        {% else %}
+                          <img src="{{ block.settings.section5_new_bottomimg| img_url: "master"}}">
+                        {% endif %}
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
           {% endcase %}
         {% endfor %}
@@ -175,11 +177,7 @@
           "id":"section5_new_bottomimg",
           "label":"Bottom image"
         },
-        {
-           "type": "url",
-            "id": "section5_new_link",
-            "label": "meet link"
-          }
+
 
       ]
 
