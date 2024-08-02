@@ -32,8 +32,8 @@
         {% for block in section.blocks %}
           {% case block.type %}
             {% when 'news' %}
-              <a href="{{  block.settings.section5.section5_new_link }}">
-                <div class="section5__new">
+              <div class="section5__new">
+                <a href="{{  block.settings.section5.section5_new_link }}">
                   <div class="section5__new_img1">
                     {% if block.settings.section5_new_img == blank %}
                       <div class="section5__new_img_div">
@@ -81,8 +81,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
           {% endcase %}
         {% endfor %}
       </div>
