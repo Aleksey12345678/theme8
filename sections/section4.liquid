@@ -44,21 +44,7 @@
                           {% endif %}
                         </div>
                         {% if block.settings.section4_employee_meet == blank %}
-                          <svg
-                            width="90.361328"
-                            height="18.000000"
-                            viewBox="60 0 123.361 18"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <desc>
-                            		Created with Pixso.
-                            </desc>
-                            <defs/>
-                            <rect id="Rectangle 278" x="82.257812" y="8.000000" width="30.500000" height="2.000000" fill="#F9D023" fill-opacity="1.000000"/>
-                            <path id="Vector 6" d="M117.37 4L122 9L117.37 14" stroke="#F9D023" stroke-opacity="1.000000" stroke-width="2.000000"/>
-                          </svg>
+                          {% render 'section4EmployeeMeetImg' %}
 
                         {% else %}
                           <div class="section4__employee_meet_img">
