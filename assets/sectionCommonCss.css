@@ -356,7 +356,7 @@ text-align: center;
 
 .body2Font{
 /* Mobile/Body 2 */
-color:rgb(249, 208, 35);
+color:rgb(11, 13, 33));
 font-family: Sofia Pro;
 font-size: 14px;
 font-weight: 300;
@@ -376,7 +376,7 @@ text-align: left;
 
 .inputFont::placeholder {
  
-  color: rgb(249, 208, 35);
+  color: rgb(11, 13, 33);
 font-family: Sofia Pro;
 font-size: 14px;
 font-weight: 700;
