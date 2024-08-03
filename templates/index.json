@@ -200,26 +200,32 @@
           "type": "employee",
           "settings": {
             "section4_meet_text": "Meet Katherina",
+            "section4_meet_link": "",
             "section4_employee_name": "Katherine Ryzhaya",
             "section4_employee_post": "Founder and CEO",
             "section4_employee_text": "A serial entrepreneur and industry expert, Katherine has nearly 20 years of experience in running infrastructure businesses and closing complex energy transactions. As the sole founder of Marvel, in 2019, Katherine saw an opportunity to run a business her way — leading with high integrity, unmatched focus on service quality and utmost commitment to driving customers’ yields.",
             "section4_employee_history_header": "Career History",
             "section4_employee_history": "<ul>\n                        <li>CEO, Renovar, <b>Shell Digital Ventures<\/b><\/li>\n                        <li>CCO, <b>Lightsource bp<\/b><\/li>\n                        <li>Co-Founder and CCO, <b>AMS (acquired by Fluence, NASDAQ: FLNC)<\/b><\/li>\n                        <li>VP and Director,<b> Evolution Markets<\/b><\/li>",
             "section4_employee_education_header": "Education",
-            "section4_employee_education": "<ul>\n                        <li>BS, Finance, University of San Francisco<\/li>\n                        <li>MBA, Finance, Duke University<\/li>\n                      <\/ul>"
+            "section4_employee_education": "<ul>\n                        <li>BS, Finance, University of San Francisco<\/li>\n                        <li>MBA, Finance, Duke University<\/li>\n                      <\/ul>",
+            "mail_link": "",
+            "in_link": ""
           }
         },
         "employee_iGnRFN": {
           "type": "employee",
           "settings": {
             "section4_meet_text": "Meet Sam",
+            "section4_meet_link": "",
             "section4_employee_name": "Sam Peelle",
             "section4_employee_post": "Senior Director and Partner",
             "section4_employee_text": "Sam has over 10 years of experience in renewable power and gas markets, with expertise in renewable fuels, demand side management, energy procurement, energy storage and analytics. Throughout his career, Sam has worked on all sides of the transaction, in each case leading with integrity, customer service and a keen focus on delivering results that positively impact the client’s bottom line and environmental impact.",
             "section4_employee_history_header": "Career History",
             "section4_employee_history": "<ul>\n<li>Director, <b> AMS <\/b>(acquired by Fluence, NASDAQ: FLNC)<\/li>\n<li>Manager, <b>EnerNOC <\/b>(acquired by Enel, BIT: ENEL)<\/li>\n<li>Regional Manager, <b>United Technologies Corporation<\/b><\/li>\n\n<\/ul>",
             "section4_employee_education_header": "Education",
-            "section4_employee_education": "<ul>\n<li>BA, Political Science, University of Pennsylvania<\/li>\n<li>MBA, Finance, Babson College<\/li>\n<\/ul>"
+            "section4_employee_education": "<ul>\n<li>BA, Political Science, University of Pennsylvania<\/li>\n<li>MBA, Finance, Babson College<\/li>\n<\/ul>",
+            "mail_link": "",
+            "in_link": ""
           }
         },
         "image_nav_xb8PPU": {
@@ -249,29 +255,37 @@
         "news_ANkpVb": {
           "type": "news",
           "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/two-people-surfing-in-blue-choppy-water.jpg",
             "section5_new_href": "Marvel  Celebrates Anniversary, $1B inВ Closed Transactions",
-            "section5_new_date": "July 13, 2021"
+            "section5_new_date": "July 13, 2021",
+            "section5_new_link": ""
           }
         },
         "news_YEwhbi": {
           "type": "news",
           "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
             "section5_new_href": "TRC and Marvel Announce RNG Development Support Partnership",
-            "section5_new_date": "May 20, 2021"
+            "section5_new_date": "May 20, 2021",
+            "section5_new_link": ""
           }
         },
         "news_xgCaXk": {
           "type": "news",
           "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/silhouetted-couples-look-out-at-a-city-at-night.jpg",
             "section5_new_href": "Marvel Power Group joins RNG Coalition",
-            "section5_new_date": "February 03, 2021"
+            "section5_new_date": "February 03, 2021",
+            "section5_new_link": ""
           }
         },
         "news_f3XXTN": {
           "type": "news",
           "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/orange-poles-create-a-tunnel.jpg",
             "section5_new_href": "Marvel Turns 3, Expands Biomethane Services to Canada and Europe",
-            "section5_new_date": "July 06, 2022"
+            "section5_new_date": "July 06, 2022",
+            "section5_new_link": ""
           }
         },
         "image_nav_LAeM6k": {
