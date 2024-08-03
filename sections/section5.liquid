@@ -120,16 +120,11 @@
                    slidesToShow: 1
                  }
                }]
-                        });
-
-
-   $('.section5__news').on('init', function(slick){
+                        }).on('init', function(slick){
   var active = $('.slick-active');
   var first = active.eq(0);
   first.addClass('first');
-  });
-
-  $('.section5__news').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  }).on('afterChange', function(event, slick, currentSlide, nextSlide){
   var active = $('.slick-active');
   var first = active.eq(0);
   var last = active.eq( active.length - 1 );
@@ -137,7 +132,8 @@
   first.addClass('first');
   });
 
-     }
+
+
 
      initializeSlider();
      console.log()
