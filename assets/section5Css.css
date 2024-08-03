@@ -11,6 +11,10 @@
   gap:30px;
 }
 }
+
+.first{
+  background-color:black;
+}
 .section5__new{
   display:flex;
   flex-direction: column;
