@@ -376,12 +376,12 @@ text-align: left;
 
 .inputFont::placeholder {
  
-  color: green;
+  color: rgb(11, 13, 33);
 font-family: Sofia Pro;
 font-size: 14px;
 font-weight: 700;
 line-height: 20px;
 letter-spacing: 0.6px;
 text-align: left;
-left: 20px;
+margin-left: 20px;
 }
