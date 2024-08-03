@@ -383,6 +383,6 @@ font-weight: 700;
 line-height: 20px;
 letter-spacing: 0.6px;
 text-align: left;
-rgb(11, 13, 33);
- margin-left:20px;
+color: rgb(11, 13, 33);
+ margin-left: 20px;
 }
