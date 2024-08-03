@@ -121,8 +121,7 @@
                  }
                }]
                         });
-       var active = $('.slick-active');
-    active.eq(0).addClass('first');
+
 
    $('.section5__news').on('init', function(slick){
   var active = $('.slick-active');
@@ -134,7 +133,7 @@
   var active = $('.slick-active');
   var first = active.eq(0);
   var last = active.eq( active.length - 1 );
-  active.removeClass('first')
+  active.removeClass('first');
   first.addClass('first');
   });
 
