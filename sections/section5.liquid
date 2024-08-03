@@ -102,12 +102,12 @@
 
 
             $('.section5__news').not('.slick-initialized').slick({
-              initialSlide:0,
+            initialSlide:0,
             slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
-               responsive: [
+            responsive: [
                  {
                    breakpoint: 1025,
                    settings: {
@@ -120,17 +120,18 @@
                      slidesToShow: 1
                    }
                  }]
-                          }).on('init', function(slick){
-    var active = $('.slick-active');
-    var first = active.eq(0);
-    first.addClass('first');
+                          })
+          .on('init', function(slick){
+            var active = $('.slick-active');
+            var first = active.eq(0);
+            first.addClass('first');
 
-    }).on('afterChange', function(event, slick, currentSlide, nextSlide){
-  var active = $('.slick-active');
-  var first = active.eq(0);
-
-  active.removeClass('first')
-  first.addClass('first');
+    })
+           .on('afterChange', function(event, slick, currentSlide, nextSlide){
+             var active = $('.slick-active');
+             var first = active.eq(0);
+             active.removeClass('first')
+             first.addClass('first');
 
   });
 
