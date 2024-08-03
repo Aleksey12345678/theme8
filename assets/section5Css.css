@@ -12,8 +12,8 @@
 }
 }
 
-.first .section5__new_img_div img{
-
+.first .section5__new_img_div {
+border-radius:0px 0px 0px 64px;
 }
 
 .section5__new{
