@@ -13,8 +13,7 @@
 }
 
 .first .section5__new_img_div img{
-  color:black;
-  background-color:black;
+ border-radius:0px 0px 0px 64px;
 }
 .section5__new{
   display:flex;
