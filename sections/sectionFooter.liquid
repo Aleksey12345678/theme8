@@ -114,7 +114,7 @@
     document.querySelector(".sectionFooter_inputBlock__button").addEventListener('submit', function(event){
       event.preventDefault();
   submit();
-      window.location.href = "https://mail.ru";
+     redirect.dispatch(Redirect.Action.ADMIN_PATH, '/customers');
        })
 </script>
 {% schema %}
