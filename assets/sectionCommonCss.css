@@ -386,7 +386,7 @@ text-align: left;
 padding-left: 20px;
 }
 
-.rc-anchor-container{
+.rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact{
   position:absolute;
   bottom:15px;
 }
