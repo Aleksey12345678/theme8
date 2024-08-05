@@ -109,10 +109,15 @@
   </div>
 </div>
 <script>
-    document.querySelector(".sectionFooter_inputBlock__button").addEventListener('submit', function(event){
-      event.preventDefault();
-  submit();
-       })
+    import createApp from '@shopify/app-bridge';
+  import {Redirect} from '@shopify/app-bridge/actions';
+  const app = createApp(config);
+  const redirect = Redirect.create(app);
+      document.querySelector(".sectionFooter_inputBlock__button").addEventListener('submit', function(event){
+        event.preventDefault();
+    submit();
+        redirect.dispatch(Redirect.Action.APP, '/settings');
+         })
 </script>
 {% schema %}
  {
