@@ -23,12 +23,12 @@ text-align: left;
 }}
 
 .section3__serviceList{
-  display:flex;
-  flex-direction: column;
   margin-top:40px;
   row-gap:40px;
    @media(min-width: 950px){
-     flex-direction: row;
+     display:flex;
+     flex-wrap: wrap;
+    justify-content:center;
      margin-top:56px;
      column-gap:29px;
    }
