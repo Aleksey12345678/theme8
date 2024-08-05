@@ -386,14 +386,6 @@ text-align: left;
 padding-left: 20px;
 }
 
-.rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact{
-  position:absolute;
-  bottom:15px;
-}
-#g-recaptchar{
-  position:absolute;
-  bottom:15px;
-}
 
 .shopify-challenge__container .g-recaptcha{
   position:absolute;
