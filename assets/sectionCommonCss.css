@@ -387,5 +387,6 @@ padding-left: 20px;
 }
 
 .rc-anchor-container{
+  position:absolute;
   bottom:15px;
 }
