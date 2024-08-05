@@ -75,6 +75,7 @@
         "list_9tzJyT": {
           "type": "list",
           "settings": {
+            "imglist-section2-image": "shopify:\/\/shop_images\/Group_263.png",
             "imglist-hader": "$1B",
             "imglist-text": "in closed RNG transactions in 2021 alone"
           }
@@ -82,6 +83,7 @@
         "list_fUyGCp": {
           "type": "list",
           "settings": {
+            "imglist-section2-image": "shopify:\/\/shop_images\/Group_263.png",
             "imglist-hader": "$4B",
             "imglist-text": "in cumulative Renewable Energy and RNG closings"
           }
@@ -96,6 +98,7 @@
         "list_8nhE86": {
           "type": "list",
           "settings": {
+            "imglist-section2-image": "shopify:\/\/shop_images\/Group_260.png",
             "imglist-hader": "$300M",
             "imglist-text": "in capital placed for client ventures"
           }
@@ -103,6 +106,7 @@
         "list_iawgJB": {
           "type": "list",
           "settings": {
+            "imglist-section2-image": "shopify:\/\/shop_images\/Group_259.png",
             "imglist-hader": "100%",
             "imglist-text": "independent and unbiased advice"
           }
@@ -255,7 +259,6 @@
         "news_ANkpVb": {
           "type": "news",
           "settings": {
-            "section5_new_img": "shopify:\/\/shop_images\/two-people-surfing-in-blue-choppy-water.jpg",
             "section5_new_href": "Marvel  Celebrates Anniversary, $1B inВ Closed Transactions",
             "section5_new_date": "July 13, 2021",
             "section5_new_link": ""
@@ -264,7 +267,6 @@
         "news_YEwhbi": {
           "type": "news",
           "settings": {
-            "section5_new_img": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
             "section5_new_href": "TRC and Marvel Announce RNG Development Support Partnership",
             "section5_new_date": "May 20, 2021",
             "section5_new_link": ""
@@ -273,7 +275,6 @@
         "news_xgCaXk": {
           "type": "news",
           "settings": {
-            "section5_new_img": "shopify:\/\/shop_images\/silhouetted-couples-look-out-at-a-city-at-night.jpg",
             "section5_new_href": "Marvel Power Group joins RNG Coalition",
             "section5_new_date": "February 03, 2021",
             "section5_new_link": ""
@@ -282,7 +283,6 @@
         "news_f3XXTN": {
           "type": "news",
           "settings": {
-            "section5_new_img": "shopify:\/\/shop_images\/orange-poles-create-a-tunnel.jpg",
             "section5_new_href": "Marvel Turns 3, Expands Biomethane Services to Canada and Europe",
             "section5_new_date": "July 06, 2022",
             "section5_new_link": ""
