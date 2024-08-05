@@ -24,7 +24,6 @@
                   {{ block.settings['heading-sectionFooter'] }}
                 </h1>
               {% endif %}
-
               <div class="section__line"><span> </span></div>
             </div>
         {% endcase %}
@@ -77,13 +76,11 @@
                         autocomplete="email"
                         type="email"
                         id="ContactForm-email"
-
                         name="contact[email]"
                         spellcheck="false"
                         autocapitalize="off"
                         value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
                         aria-required="true"
-
                         placeholder="{{ block.settings.inputBlockEmail }}"
                       >
                     </div>
@@ -114,14 +111,13 @@
     document.querySelector(".sectionFooter_inputBlock__button").addEventListener('submit', function(event){
       event.preventDefault();
   submit();
+
        })
 </script>
 {% schema %}
  {
   "name": "sectionFooter",
   "settings": [
-
-
   ],
    "blocks":[
    {
@@ -189,7 +185,6 @@
           "type":"inline_richtext",
           "id":"buttonText",
           "default":" SEND",
-
           "label":"Button text"
       }
       ]
@@ -207,7 +202,6 @@
       ]
     }
    ] ,
-
   "presets":[
   {
     "name":"sectionFooter",
@@ -225,7 +219,6 @@
           "type": "imageNav"
         }
       ]
-
   }
 ]
 }
