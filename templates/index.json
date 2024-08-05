@@ -260,6 +260,7 @@
         "news_ANkpVb": {
           "type": "news",
           "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/915_1_1.png",
             "section5_new_href": "Marvel  Celebrates Anniversary, $1B inВ Closed Transactions",
             "section5_new_date": "July 13, 2021",
             "section5_new_link": ""
@@ -268,6 +269,8 @@
         "news_YEwhbi": {
           "type": "news",
           "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/915_1.png",
+            "section5_new_logoimg": "shopify:\/\/shop_images\/logo-updated_2x_1.png",
             "section5_new_href": "TRC and Marvel Announce RNG Development Support Partnership",
             "section5_new_date": "May 20, 2021",
             "section5_new_link": ""
@@ -276,6 +279,7 @@
         "news_xgCaXk": {
           "type": "news",
           "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/915_2.png",
             "section5_new_href": "Marvel Power Group joins RNG Coalition",
             "section5_new_date": "February 03, 2021",
             "section5_new_link": ""
@@ -284,6 +288,8 @@
         "news_f3XXTN": {
           "type": "news",
           "settings": {
+            "section5_new_img": "shopify:\/\/shop_images\/denys-nevozhai-dHNF-iBfbrA-unsplash_2.png",
+            "section5_new_logoimg": "shopify:\/\/shop_images\/Group.png",
             "section5_new_href": "Marvel Turns 3, Expands Biomethane Services to Canada and Europe",
             "section5_new_date": "July 06, 2022",
             "section5_new_link": ""
