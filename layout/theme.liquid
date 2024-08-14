@@ -2,6 +2,13 @@
 <html>
   <head>
     {{ content_for_header }}
+    <style>
+      {{settings.heading_font| font_face}}
+       :root{
+         --heading_font:{{settings.heading_font.family}}
+       }
+    </style>
+    {{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
     {% section 'sectionHeader' %}
