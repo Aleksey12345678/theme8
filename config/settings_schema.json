@@ -1,1 +1,12 @@
-[]
+[{
+  "name":"Fonts",
+  "settings":[
+    {
+  "type": "font_picker",
+  "id": "heading_font",
+  "label": "Heading font",
+  "default": "helvetica_n4"
+}
+  ]
+}
+]
