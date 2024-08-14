@@ -109,7 +109,8 @@
 }
 
 .sectionHeader-nav-anchor{
-  display : block;
+  display : flex;
+ justify-content: center;
   color:rgb(11, 13, 33);
 
 }
