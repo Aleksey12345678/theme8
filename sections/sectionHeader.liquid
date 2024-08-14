@@ -61,9 +61,9 @@
    document.querySelector('.sectionHeader__mobileNav_header__closeImg').addEventListener('click',()=> {
     document.querySelector('.sectionHeader').classList.remove('nav-active');
   } );
-     document.querySelectorAll('.sectionHeader__mobileNav_header__nav_ul .sectionHeader-nav-item').addEventListener('click',()=> {
+     document.querySelectorAll('.sectionHeader__mobileNav_header__nav_ul .sectionHeader-nav-item').forEach(item=>{item.addEventListener('click',()=> {
     document.querySelector('.sectionHeader').classList.remove('nav-active');
-  } );
+  } )});
 </script>
 {% schema %}
 {
