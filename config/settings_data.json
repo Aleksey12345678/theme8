@@ -9,6 +9,7 @@
 */
 {
   "current": {
+    "body_font": "baskerville_no_2_n4",
     "sections": {
       "sectionHeader": {
         "type": "sectionHeader",
