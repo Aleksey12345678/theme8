@@ -9,6 +9,12 @@
          --heading_font:{{settings.heading_font.family}}
           {% else %}
              --heading_font:{{'Alata'}}
+          {% endif %};
+
+          {% if settings.heading_font.family != "Helvetica" %}
+         --heading_font:{{settings.heading_font.family}}
+          {% else %}
+             --heading_font:{{'Sofia Pro'}}
           {% endif %}
 
        }
