@@ -64,6 +64,9 @@
      document.querySelectorAll('.sectionHeader__mobileNav_header__nav_ul .sectionHeader-nav-item').forEach(item=>{item.addEventListener('click',()=> {
     document.querySelector('.sectionHeader').classList.remove('nav-active');
   } )});
+     document.querySelector('.contactButton').addEventListener('click',()=> {
+    document.querySelector('.sectionHeader').classList.remove('nav-active');
+  } );
 </script>
 {% schema %}
 {
