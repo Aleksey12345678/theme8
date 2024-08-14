@@ -3,15 +3,15 @@
   <head>
     {{ content_for_header }}
     <style>
-         {{settings.heading_font| font_face}}
-          :root{
-            {% if settings.heading_font.family != blank %}
-      --heading_font:{{settings.heading_font.family}}
-             {% else %}
-                --heading_font:{{'Alata'}}
-             {% endif %}
+      {{settings.heading_font| font_face}}
+       :root{
+         {% if settings.heading_font.family != "helvetica_n4"} %}
+         --heading_font:{{settings.heading_font.family}}
+          {% else %}
+             --heading_font:{{'Alata'}}
+          {% endif %}
 
-          }
+       }
     </style>
     {{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
   </head>
