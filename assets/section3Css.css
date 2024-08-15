@@ -77,3 +77,8 @@ width: 100%;
   width:100%;
   max-width:825px;
 }
+.section3_imageNav{
+  width: 108px;
+    height: 209px;
+ background-size: cover;
+}
