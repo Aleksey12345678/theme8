@@ -1,7 +1,7 @@
 {{ 'section3Css.css' | asset_url | stylesheet_tag }}
 {{ 'sectionCommonCss.css' | asset_url | stylesheet_tag }}
-<div id="services" class="section">
-  <div class="section__container section3__container">
+<div id="services" class="section section3__container">
+  <div class="section__container ">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'imageNav' %}
