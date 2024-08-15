@@ -5,11 +5,7 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'imageNav' %}
-          {% if block.settings['imageNav-sectionFooter'] == blank %}
-            <div class="imageNav"><img src="{{ 'Group 249.png'| asset_url }}"></div>
-          {% else %}
-            <div class="imageNav"><img src="{{ block.settings.imageNav-sectionFooter| img_url: "master"}}"></div>
-          {% endif %}
+          <div class="imageNav sectionFooter_imageNav"></div>
       {% endcase %}
     {% endfor %}
     <div class="section__inner">
@@ -114,10 +110,24 @@
       submit();
      })
 </script>
+<style>
+    .sectionFooter_imageNav{
+    {% if section.settings.imageNav-sectionFooter == blank %}
+       background-image: url("{{ 'Group 244.png'| asset_url }}");
+    {% else %}
+      background-image: url('{{ section.settings.imageNav-sectionFooter| img_url: "master"  }}');
+    {% endif %}
+  }
+</style>
 {% schema %}
  {
   "name": "sectionFooter",
   "settings": [
+    {
+          "type":"image_picker",
+          "id":"imageNav-sectionFooter",
+          "label":"ImageNav"
+        }
   ],
    "blocks":[
    {
@@ -194,11 +204,7 @@
       "name":"ImageNav-sectionFooter",
       "limit":1,
       "settings":[
-        {
-          "type":"image_picker",
-          "id":"imageNav-sectionFooter",
-          "label":"ImageNav"
-        }
+
       ]
     }
    ] ,
