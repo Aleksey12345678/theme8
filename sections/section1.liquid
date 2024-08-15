@@ -60,10 +60,10 @@
 
 <style>
   .firstSection__container{
-    {% if block.settings.image == blank %}
+    {% if section.settings.image == blank %}
        background-image: url("{{ 'robert-bye-R-WtV-QyVnY-unsplash.png' | asset_url }}");
     {% else %}
-      background-image: url('{{ block.settings.image| img_url: "master"  }}');
+      background-image: url('{{ section.settings.image| img_url: "master"  }}');
     {% endif %}
   }
 
