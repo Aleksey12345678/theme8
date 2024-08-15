@@ -68,10 +68,10 @@
   }
 
    .imageNav{
-    {% if  block.settings.imageNav-section1 == blank %}
+    {% if section.settings.imageNav-section1 == blank %}
        background-image: url("{{ 'Group 245.png'| asset_url }}");
     {% else %}
-      background-image: url('{{ block.settings.imageNav-section1| img_url: "master"  }}');
+      background-image: url('{{ section.settings.imageNav-section1| img_url: "master"  }}');
     {% endif %}
   }
 </style>
@@ -85,7 +85,12 @@
       "id":"image",
       "label":"image"
 
-    }
+    },
+     {
+          "type":"image_picker",
+          "id":"imageNav-section1",
+          "label":"ImageNav"
+        }
   ],
   "blocks":[
    { "type":"heading",
@@ -134,11 +139,7 @@
       "name":"ImageNav-section1",
       "limit":1,
       "settings":[
-        {
-          "type":"image_picker",
-          "id":"imageNav-section1",
-          "label":"ImageNav"
-        }
+
       ]
     },
     {
