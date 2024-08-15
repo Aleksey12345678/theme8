@@ -5,11 +5,7 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'imageNav' %}
-          {% if block.settings['imageNav-section3'] == blank %}
-            <div class="imageNav"><img src="{{ 'Group 246.png'| asset_url }}"></div>
-          {% else %}
-            <div class="imageNav"><img src="{{ block.settings.imageNav-section3| img_url: "master"}}"></div>
-          {% endif %}
+          <div class="imageNav section3_imageNav"></div>
       {% endcase %}
     {% endfor %}
     <div class="section__inner">
@@ -96,6 +92,12 @@
     line-height: 2em;
 
    }
+    .section3_imageNav{
+    {% if section.settings.imageNav-section3 == blank %}
+       background-image: url("{{ 'Group 246.png'| asset_url }}");
+    {% else %}
+      background-image: url('{{ section.settings.imageNav-section3| img_url: "master"  }}');
+    {% endif %}
 </style>
 {% schema %}
 {
