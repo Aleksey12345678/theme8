@@ -89,10 +89,10 @@
 </div>
 <style>
     .section2_imageNav{
-    {% if section.settings.imageNav-section1 == blank %}
+    {% if section.settings.imageNav-section2 == blank %}
        background-image: url("{{ 'Group 244.png'| asset_url }}");
     {% else %}
-      background-image: url('{{ section.settings.imageNav-section1| img_url: "master"  }}');
+      background-image: url('{{ section.settings.imageNav-section2| img_url: "master"  }}');
     {% endif %}
   }
 </style>
