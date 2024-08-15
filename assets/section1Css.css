@@ -89,9 +89,7 @@ bottom:54px;
   height: 101px;
 }
 .firstSection_imageNav{
-  width: 108px;
-    height: 209px;
-  object-fit: contain;
+  background-size: cover;
 }
 
 .firstSection_blockNav_img img{
