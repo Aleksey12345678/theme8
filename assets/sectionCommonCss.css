@@ -406,6 +406,19 @@ text-align: left;
 padding-left: 20px;
 }
 
+.inputFont::value {
+ 
+  color: rgb(11, 13, 33);
+font-family: var(--body_font);
+font-size: 14px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.6px;
+text-align: left;
+padding-left: 20px;
+}
+
+
 
 .g-recaptcha{
 margin-top:70px;
