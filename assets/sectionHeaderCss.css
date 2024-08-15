@@ -42,12 +42,8 @@
 .sectionHeader__logo img{
     width:100%;
     height:100%;
-  object-fit: contain;
-     @media(min-width: 750px){ 
-      width:100%;
-    height:100%;
-  object-fit: contain;
-}}
+    object-fit: contain;
+}
 
 
 
@@ -151,8 +147,9 @@
 }
 
   .sectionHeader__mobileNav_header__logo img{
-    width:100px;
-  height:38px;
+   width:100%;
+    height:100%;
+    object-fit: contain;;
   }
   
 .sectionHeader__mobileNav_header__closeImg{
