@@ -7,11 +7,7 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'imageNav' %}
-          {% if block.settings['imageNav-section5'] == blank %}
-            <div class="imageNav"><img src="{{ 'Group 248.png'| asset_url }}"></div>
-          {% else %}
-            <div class="imageNav"><img src="{{ block.settings.imageNav-section5| img_url: "master"}}"></div>
-          {% endif %}
+          <div class="imageNav section5_imageNav"></div>
       {% endcase %}
     {% endfor %}
     <div class="section__inner">
@@ -140,11 +136,25 @@
 
        initializeSlider();
 </script>
-
+<style>
+    .section2_imageNav{
+    {% if section.settings.imageNav-section5 == blank %}
+       background-image: url("{{ 'Group 248.png'| asset_url }}");
+    {% else %}
+      background-image: url('{{ section.settings.imageNav-section5| img_url: "master"  }}');
+    {% endif %}
+  }
+</style>
 {% schema %}
   {
   "name": "section5",
-  "settings": [],
+  "settings": [
+     {
+          "type":"image_picker",
+          "id":"imageNav-section5",
+          "label":"ImageNav"
+        }
+  ],
    "blocks":[
    {
      "type":"heading",
@@ -206,11 +216,7 @@
       "name":"ImageNav-section5",
       "limit":1,
       "settings":[
-        {
-          "type":"image_picker",
-          "id":"imageNav-section5",
-          "label":"ImageNav"
-        }
+
       ]
     }
        ],
