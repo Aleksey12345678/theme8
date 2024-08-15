@@ -13,6 +13,10 @@
   background-size: cover;
   background-repeat: no-repeat;           
   background-position:30% 100%;  
+    @media(min-width: 1640px){  
+  background-position:30% 25%; 
+
+    }
    }
 
 .firstSection__container::before {
