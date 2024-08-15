@@ -68,10 +68,10 @@
   }
 
    .imageNav{
-    {% if section.settings.image == blank %}
+    {% if  block.settings.imageNav-section1 == blank %}
        background-image: url("{{ 'Group 245.png'| asset_url }}");
     {% else %}
-      background-image: url('{{ section.settings.image| img_url: "master"  }}');
+      background-image: url('{{ block.settings.imageNav-section1| img_url: "master"  }}');
     {% endif %}
   }
 </style>
