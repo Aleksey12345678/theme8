@@ -42,7 +42,7 @@
 .sectionHeader__logo img{
     width:100%;
     height:100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
@@ -149,7 +149,7 @@
   .sectionHeader__mobileNav_header__logo img{
    width:100%;
     height:100%;
-    object-fit: contain;;
+    object-fit: cover;
   }
   
 .sectionHeader__mobileNav_header__closeImg{
