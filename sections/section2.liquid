@@ -5,7 +5,7 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'imageNav' %}
-          <div class="imageNav"></div>
+          <div class="imageNav section2_imageNav"></div>
       {% endcase %}
     {% endfor %}
     <div class="section__inner">
@@ -88,11 +88,11 @@
   </div>
 </div>
 <style>
-   .section2__imageNav{
-    {% if section.settings.image == blank %}
+    .section2_imageNav{
+    {% if section.settings.imageNav-section1 == blank %}
        background-image: url("{{ 'Group 244.png'| asset_url }}");
     {% else %}
-      background-image: url('{{ section.settings.image| img_url: "master"  }}');
+      background-image: url('{{ section.settings.imageNav-section1| img_url: "master"  }}');
     {% endif %}
   }
 </style>
@@ -100,8 +100,11 @@
 {% schema %}
 {
   "name": "Section- 2",
-  "settings": [
-
+  "settings": [{
+          "type":"image_picker",
+          "id":"imageNav-section2",
+          "label":"ImageNav"
+        }
   ],
   "blocks":[
    { "type":"heading",
@@ -171,11 +174,7 @@
       "name":"ImageNav-section2",
       "limit":1,
       "settings":[
-        {
-          "type":"image_picker",
-          "id":"imageNav-section2",
-          "label":"ImageNav"
-        }
+
       ]
     }
 
